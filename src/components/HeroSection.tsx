@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-cover bg-center h-[60vh] flex items-center justify-center text-center" style={{ backgroundImage: "url('/placeholder.svg')" }}>
+    <section className="relative bg-cover bg-center h-[60vh] flex items-center justify-center text-center" style={{ backgroundImage: "url('/hero-background.jpg')" }}> {/* Cambiado a /hero-background.jpg */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-white p-6 max-w-3xl">
         <h1 className="text-5xl font-extrabold mb-4 leading-tight">
