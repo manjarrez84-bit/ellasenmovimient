@@ -3,10 +3,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ContactSection from '@/components/ContactSection';
 import { MadeWithDyad } from '@/components/made-with-dyad';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
-import { Label } from '@/components/ui/label';
+import ContactForm from '@/components/forms/ContactForm'; // Importar el nuevo componente
 
 const ContactPage = () => {
   return (
@@ -22,25 +19,7 @@ const ContactPage = () => {
             </p>
 
             <div className="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700">
-              <form className="space-y-6">
-                <div>
-                  <Label htmlFor="name" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Nombre Completo</Label>
-                  <Input id="name" type="text" placeholder="Tu nombre" className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600" />
-                </div>
-                <div>
-                  <Label htmlFor="email" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Correo Electrónico</Label>
-                  <Input id="email" type="email" placeholder="tu@ejemplo.com" className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600" />
-                </div>
-                <div>
-                  <Label htmlFor="subject" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Asunto</Label>
-                  <Input id="subject" type="text" placeholder="Asunto del mensaje" className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600" />
-                </div>
-                <div>
-                  <Label htmlFor="message" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Mensaje</Label>
-                  <Textarea id="message" placeholder="Escribe tu mensaje aquí..." rows={5} className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600" />
-                </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Enviar Mensaje</Button>
-              </form>
+              <ContactForm /> {/* Usar el componente ContactForm */}
             </div>
           </div>
         </section>
