@@ -37,7 +37,7 @@ const AboutSection = () => {
                 <div className="flex items-start space-x-4">
                   <Lightbulb className="text-primary mt-1" size={24} />
                   <p className="text-gray-600 dark:text-gray-400">
-                    Ser un referente nacional en la construcción de una sociedad más justa e igualitaria, donde todas las mujeres vivan libres de violencia y con oportunidades.
+                    Ser una institución sólida, dinámica, ética y sostenible, líder en la oferta de oportunidades para las mujeres y niñas mexicanas y sus familias, operando con alta capacidad, eficiencia y estándares de calidad.
                   </p>
                 </div>
               </TabsContent>
