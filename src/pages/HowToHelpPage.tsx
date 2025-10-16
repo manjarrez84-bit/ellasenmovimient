@@ -3,11 +3,17 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { HandHeart, DollarSign, Users } from 'lucide-react';
+import { HandHeart, DollarSign, Users, Facebook, Twitter } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MadeWithDyad } from '@/components/made-with-dyad';
 
 const HowToHelpPage = () => {
+  const shareUrl = window.location.origin;
+  const shareText = "Apoya a Ellas en Movimiento, A.C. a empoderar a mujeres y transformar vidas. ¡Tu ayuda hace la diferencia! #EllasEnMovimiento";
+  
+  const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+  const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareText)}`;
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -57,8 +63,17 @@ const HowToHelpPage = () => {
                 </CardHeader>
                 <CardContent className="text-gray-600 dark:text-gray-400">
                   Ayúdanos a crear conciencia sobre la violencia de género y la importancia de empoderar a las mujeres compartiendo nuestro mensaje.
-                  <div className="mt-6">
-                    <Button variant="ghost" className="text-primary hover:underline">Compartir en Redes</Button>
+                  <div className="mt-6 flex justify-center space-x-4">
+                    <a href={facebookShareUrl} target="_blank" rel="noopener noreferrer" aria-label="Compartir en Facebook">
+                      <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                        <Facebook className="h-5 w-5" />
+                      </Button>
+                    </a>
+                    <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer" aria-label="Compartir en Twitter">
+                      <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                        <Twitter className="h-5 w-5" />
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
