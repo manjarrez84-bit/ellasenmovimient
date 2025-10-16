@@ -16,7 +16,7 @@ const AboutSection = () => {
           <Card className="p-6 shadow-lg relative overflow-hidden dark:bg-gray-700 dark:border-gray-600">
             {/* Background Image */}
             <div
-              className="absolute inset-0 bg-cover bg-center grayscale"
+              className="absolute inset-0 bg-cover bg-center grayscale opacity-50" // Añadido 'opacity-50' aquí
               style={{ backgroundImage: "url('/mission-background.jpg')" }}
             ></div>
             {/* Overlay for readability - REMOVED for maximum transparency */}
@@ -45,7 +45,7 @@ const AboutSection = () => {
           <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
             <CardHeader className="flex flex-col items-center">
               <Heart className="text-primary mb-4" size={40} />
-              <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestros Valores</CardTitle>
+              <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestra Valores</CardTitle>
             </CardHeader>
             <CardContent className="text-gray-600 dark:text-gray-400">
               Solidaridad, Respeto, Integridad, Compromiso y Empatía son los pilares de nuestro trabajo diario.
