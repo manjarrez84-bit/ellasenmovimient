@@ -28,7 +28,7 @@ const AboutSection = () => {
               <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestra Visión</CardTitle>
             </CardHeader>
             <CardContent className="text-gray-600 dark:text-gray-400">
-              Ser un referente nacional en la construcción de una sociedad más justa e igualitaria, donde todas las mujeres vivan libres de violencia y con oportunidades.
+              Ser una institución sólida, dinámica, ética y sostenible, líder en la oferta de servicios para las mujeres y niñas mexicanas, y sus familias, operando con alta capacidad, eficiencia y estándares de calidad.
             </CardContent>
           </Card>
 
