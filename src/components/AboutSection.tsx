@@ -19,8 +19,7 @@ const AboutSection = () => {
               className="absolute inset-0 bg-cover bg-center grayscale"
               style={{ backgroundImage: "url('/mission-background.jpg')" }}
             ></div>
-            {/* Overlay for readability */}
-            <div className="absolute inset-0 bg-black opacity-5"></div> {/* Opacidad reducida a 5 */}
+            {/* Overlay for readability - REMOVED for maximum transparency */}
 
             <CardHeader className="flex flex-col items-center relative z-10">
               <Goal className="text-white mb-4" size={40} />
