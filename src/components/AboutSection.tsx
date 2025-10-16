@@ -16,11 +16,11 @@ const AboutSection = () => {
           <Card className="p-6 shadow-lg relative overflow-hidden dark:bg-gray-700 dark:border-gray-600">
             {/* Background Image */}
             <div
-              className="absolute inset-0 bg-cover bg-center grayscale" // Añadido 'grayscale' aquí
+              className="absolute inset-0 bg-cover bg-center grayscale"
               style={{ backgroundImage: "url('/mission-background.jpg')" }}
             ></div>
             {/* Overlay for readability */}
-            <div className="absolute inset-0 bg-black opacity-10"></div> {/* Opacidad reducida a 10 */}
+            <div className="absolute inset-0 bg-black opacity-5"></div> {/* Opacidad reducida a 5 */}
 
             <CardHeader className="flex flex-col items-center relative z-10">
               <Goal className="text-white mb-4" size={40} />
