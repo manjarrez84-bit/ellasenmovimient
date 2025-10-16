@@ -6,8 +6,11 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm dark:bg-gray-800">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold text-primary dark:text-primary-foreground">
-          Ellas en Movimiento, A.C.
+        <Link to="/" className="flex items-center space-x-2">
+          <img src="/logo.jpg" alt="Ellas en Movimiento A.C. Logo" className="h-10 w-auto" /> {/* Usando logo.jpg */}
+          <span className="text-2xl font-bold text-primary dark:text-primary-foreground sr-only md:not-sr-only">
+            Ellas en Movimiento, A.C.
+          </span>
         </Link>
         <div className="hidden md:flex space-x-6">
           <Link to="/" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Inicio</Link>
