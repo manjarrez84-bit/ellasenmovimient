@@ -4,13 +4,18 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gray-200 dark:bg-gray-800 h-[60vh] flex flex-col items-center justify-center text-center p-6">
-      <div className="relative z-10 text-white p-6 max-w-3xl flex flex-col items-center">
-        <img 
-          src="/hero-background.jpg" 
-          alt="Ellas en Movimiento A.C. Hero" 
-          className="max-h-64 md:max-h-80 lg:max-h-96 w-auto object-contain mb-8 rounded-lg shadow-lg" 
-        />
+    <section 
+      className="relative h-screen flex flex-col items-center justify-center text-center text-white"
+      style={{ backgroundImage: "url('/hero-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
+      <div className="absolute inset-0 bg-black/50 z-0" />
+      <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">
+          Empoderando Mujeres, Transformando Vidas.
+        </h1>
+        <p className="text-lg md:text-xl mb-8 max-w-2xl">
+          Brindamos apoyo integral a mujeres en situación de violencia y pobreza, ofreciéndoles las herramientas para construir un futuro digno y libre.
+        </p>
         <Link to="/how-to-help">
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-3">
             Únete a Nuestra Causa
