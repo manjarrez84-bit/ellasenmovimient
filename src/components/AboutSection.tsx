@@ -12,36 +12,26 @@ const AboutSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Nuestra Misión Card with background image */}
-          <Card className="p-6 shadow-lg relative overflow-hidden dark:bg-gray-700 dark:border-gray-600">
-            {/* Background Image */}
-            <div
-              className="absolute inset-0 bg-cover bg-center grayscale opacity-50"
-              style={{ backgroundImage: "url('/mission-background.jpg')" }}
-            ></div>
-            {/* Overlay for readability - REMOVED for maximum transparency */}
-
-            <CardHeader className="flex flex-col items-center relative z-10">
-              <Goal className="text-black mb-4" size={40} /> {/* Cambiado a text-black */}
-              <CardTitle className="text-2xl font-semibold mb-2 text-black">Nuestra Misión</CardTitle> {/* Cambiado a text-black */}
+          <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
+            <CardHeader className="flex flex-col items-center">
+              <Goal className="text-primary mb-4" size={40} />
+              <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestra Misión</CardTitle>
             </CardHeader>
-            <CardContent className="text-black relative z-10"> {/* Cambiado a text-black */}
-              Contribuir a elevar la calidad de vida de las personas de escasos recursos en especial de niñas y mujeres mexicanas, buscando su participación igualitaria en la sociedad. Ofreciéndoles de manera eficiente y sostenible servicios y productos que contribuyan a su desarrollo integral.
+            <CardContent className="text-gray-600 dark:text-gray-400">
+              Empoderar a mujeres en situación de vulnerabilidad, ofreciendo apoyo integral para su desarrollo personal, social y económico.
             </CardContent>
           </Card>
 
-          {/* Nuestra Visión Card */}
           <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
             <CardHeader className="flex flex-col items-center">
               <Lightbulb className="text-primary mb-4" size={40} />
               <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestra Visión</CardTitle>
             </CardHeader>
             <CardContent className="text-gray-600 dark:text-gray-400">
-              Ser una institución sólida, dinámica, ética y sostenible, líder en la oferta de servicios para las mujeres y niñas mexicanas, y sus familias, operando con alta capacidad, eficiencia y estándares de calidad.
+              Ser un referente nacional en la construcción de una sociedad más justa e igualitaria, donde todas las mujeres vivan libres de violencia y con oportunidades.
             </CardContent>
           </Card>
 
-          {/* Nuestros Valores Card */}
           <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
             <CardHeader className="flex flex-col items-center">
               <Heart className="text-primary mb-4" size={40} />
