@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gray-100 dark:bg-gray-800 h-[60vh] flex flex-col items-center justify-center text-center p-6">
+    <section className="relative bg-gray-200 dark:bg-gray-800 h-[60vh] flex flex-col items-center justify-center text-center p-6">
       <div className="relative z-10 text-white p-6 max-w-3xl flex flex-col items-center">
         <img 
           src="/hero-background.jpg" 

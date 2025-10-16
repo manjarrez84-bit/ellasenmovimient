@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-primary mb-12 dark:text-primary-foreground">Nosotras</h2>
+        <h2 className="text-4xl font-bold text-primary mb-12">Nosotras</h2>
         <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto dark:text-gray-300">
           Ellas en Movimiento, A.C. es una asociación sin fines de lucro dedicada a empoderar a mujeres que enfrentan violencia y pobreza, brindándoles herramientas y apoyo para transformar sus vidas.
         </p>
