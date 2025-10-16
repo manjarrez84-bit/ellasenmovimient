@@ -16,13 +16,13 @@
     --primary: 270 70% 40%; /* Morado */
     --primary-foreground: 0 0% 100%; /* Blanco */
 
-    --secondary: 180 70% 40%; /* Azul Aqua */
+    --secondary: 320 80% 50%; /* Verde Magenta */
     --secondary-foreground: 222.2 84% 4.9%; /* Gris muy oscuro */
 
     --muted: 210 40% 96.1%; /* Gris claro */
     --muted-foreground: 215.4 16.3% 46.9%; /* Gris medio */
 
-    --accent: 180 70% 40%; /* Azul Aqua */
+    --accent: 320 80% 50%; /* Verde Magenta */
     --accent-foreground: 222.2 84% 4.9%; /* Gris muy oscuro */
 
     --destructive: 0 84.2% 60.2%; /* Rojo (mantener para errores) */
@@ -38,7 +38,7 @@
     --sidebar-foreground: 0 0% 100%; /* Blanco */
     --sidebar-primary: 270 70% 40%; /* Morado */
     --sidebar-primary-foreground: 0 0% 100%; /* Blanco */
-    --sidebar-accent: 180 70% 40%; /* Azul Aqua */
+    --sidebar-accent: 320 80% 50%; /* Verde Magenta */
     --sidebar-accent-foreground: 222.2 84% 4.9%; /* Gris muy oscuro */
     --sidebar-border: 217.2 32.6% 17.5%; /* Gris oscuro */
     --sidebar-ring: 270 70% 40%; /* Morado */
@@ -57,13 +57,13 @@
     --primary: 270 70% 40%; /* Morado */
     --primary-foreground: 210 40% 98%; /* Blanco roto */
 
-    --secondary: 180 70% 40%; /* Azul Aqua */
+    --secondary: 320 80% 50%; /* Verde Magenta */
     --secondary-foreground: 210 40% 98%; /* Blanco roto */
 
     --muted: 217.2 32.6% 17.5%; /* Gris oscuro */
     --muted-foreground: 215 20.2% 65.1%; /* Gris medio */
 
-    --accent: 180 70% 40%; /* Azul Aqua */
+    --accent: 320 80% 50%; /* Verde Magenta */
     --accent-foreground: 210 40% 98%; /* Blanco roto */
 
     --destructive: 0 62.8% 30.6%; /* Rojo oscuro (mantener para errores) */
@@ -77,7 +77,7 @@
     --sidebar-foreground: 210 40% 98%; /* Blanco roto */
     --sidebar-primary: 270 70% 40%; /* Morado */
     --sidebar-primary-foreground: 210 40% 98%; /* Blanco roto */
-    --sidebar-accent: 180 70% 40%; /* Azul Aqua */
+    --sidebar-accent: 320 80% 50%; /* Verde Magenta */
     --sidebar-accent-foreground: 210 40% 98%; /* Blanco roto */
     --sidebar-border: 217.2 32.6% 17.5%; /* Gris oscuro */
     --sidebar-ring: 270 70% 40%; /* Morado */
