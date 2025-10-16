@@ -18,7 +18,7 @@ const AboutSection = () => {
               <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestra Misión</CardTitle>
             </CardHeader>
             <CardContent className="text-gray-600 dark:text-gray-400">
-              Empoderar a mujeres en situación de vulnerabilidad, ofreciendo apoyo integral para su desarrollo personal, social y económico.
+              Contribuir a elevar la calidad de vida de las personas de escasos recursos en especial de niñas y mujeres mexicanas, buscando su participación igualitaria en la sociedad. Ofreciéndoles de manera eficiente y sostenible servicios y productos que contribuyan a su desarrollo integral.
             </CardContent>
           </Card>
 
