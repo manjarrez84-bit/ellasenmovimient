@@ -12,14 +12,17 @@ const AboutSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
-            <CardHeader className="flex flex-col items-center">
-              <Goal className="text-primary mb-4" size={40} />
-              <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestra Misión</CardTitle>
-            </CardHeader>
-            <CardContent className="text-gray-600 dark:text-gray-400">
-              Contribuir a elevar la calidad de vida de las personas de escasos recursos en especial de niñas y mujeres mexicanas, buscando su participación igualitaria en la sociedad. Ofreciéndoles de manera eficiente y sostenible servicios y productos que contribuyan a su desarrollo integral.
-            </CardContent>
+          <Card className="relative p-6 shadow-lg overflow-hidden bg-[url('/IMG-20251015-WA0013.jpg')] bg-cover bg-center min-h-[300px] flex flex-col justify-center items-center text-white dark:bg-gray-700 dark:border-gray-600">
+            <div className="absolute inset-0 bg-black/50 rounded-lg"></div> {/* Overlay para legibilidad */}
+            <div className="relative z-10 flex flex-col items-center">
+              <CardHeader className="flex flex-col items-center p-0 mb-4">
+                <Goal className="text-white mb-4" size={40} />
+                <CardTitle className="text-2xl font-semibold text-white">Nuestra Misión</CardTitle>
+              </CardHeader>
+              <CardContent className="text-white p-0">
+                Contribuir a elevar la calidad de vida de las personas de escasos recursos en especial de niñas y mujeres mexicanas, buscando su participación igualitaria en la sociedad. Ofreciéndoles de manera eficiente y sostenible servicios y productos que contribuyan a su desarrollo integral.
+              </CardContent>
+            </div>
           </Card>
 
           <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
