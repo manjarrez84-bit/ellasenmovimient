@@ -21,10 +21,16 @@ const Navbar = () => {
             Inicio
           </Link>
           <Link
-            to="/#nosotras" // Enlace a la sección Nosotras
+            to="/#nosotras"
             className="text-sm font-medium transition-colors hover:text-primary"
           >
             Nosotras
+          </Link>
+          <Link
+            to="/#contacto" // Nuevo enlace a la sección de Contacto
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Contacto
           </Link>
           {/* Aquí puedes añadir más enlaces a futuras secciones */}
         </nav>
@@ -45,10 +51,16 @@ const Navbar = () => {
                   Inicio
                 </Link>
                 <Link
-                  to="/#nosotras" // Enlace a la sección Nosotras
+                  to="/#nosotras"
                   className="text-lg font-semibold hover:text-primary"
                 >
                   Nosotras
+                </Link>
+                <Link
+                  to="/#contacto" // Nuevo enlace a la sección de Contacto
+                  className="text-lg font-semibold hover:text-primary"
+                >
+                  Contacto
                 </Link>
                 {/* Aquí puedes añadir más enlaces a futuras secciones */}
               </div>

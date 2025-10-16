@@ -1,13 +1,16 @@
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import AboutSection from "@/components/AboutSection";
+import HeroSection from "@/components/HeroSection"; // Importamos HeroSection
+import ContactForm from "@/components/ContactForm"; // Importamos ContactForm
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Aquí puedes añadir otros componentes de tu página principal si los tienes */}
-      <div id="nosotras"> {/* Añadimos un ID para la navegación */}
+      <HeroSection /> {/* Añadimos la sección principal */}
+      <div id="nosotras">
         <AboutSection />
       </div>
+      <ContactForm /> {/* Añadimos el formulario de contacto */}
       <MadeWithDyad />
     </div>
   );
