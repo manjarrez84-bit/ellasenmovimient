@@ -16,16 +16,16 @@ const AboutSection = () => {
           <Card className="p-6 shadow-lg relative overflow-hidden dark:bg-gray-700 dark:border-gray-600">
             {/* Background Image */}
             <div
-              className="absolute inset-0 bg-cover bg-center grayscale opacity-50" // Añadido 'opacity-50' aquí
+              className="absolute inset-0 bg-cover bg-center grayscale opacity-50"
               style={{ backgroundImage: "url('/mission-background.jpg')" }}
             ></div>
             {/* Overlay for readability - REMOVED for maximum transparency */}
 
             <CardHeader className="flex flex-col items-center relative z-10">
-              <Goal className="text-white mb-4" size={40} />
-              <CardTitle className="text-2xl font-semibold mb-2 text-white">Nuestra Misión</CardTitle>
+              <Goal className="text-black mb-4" size={40} /> {/* Cambiado a text-black */}
+              <CardTitle className="text-2xl font-semibold mb-2 text-black">Nuestra Misión</CardTitle> {/* Cambiado a text-black */}
             </CardHeader>
-            <CardContent className="text-white relative z-10">
+            <CardContent className="text-black relative z-10"> {/* Cambiado a text-black */}
               Contribuir a elevar la calidad de vida de las personas de escasos recursos en especial de niñas y mujeres mexicanas, buscando su participación igualitaria en la sociedad. Ofreciéndoles de manera eficiente y sostenible servicios y productos que contribuyan a su desarrollo integral.
             </CardContent>
           </Card>
@@ -45,7 +45,7 @@ const AboutSection = () => {
           <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
             <CardHeader className="flex flex-col items-center">
               <Heart className="text-primary mb-4" size={40} />
-              <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestra Valores</CardTitle>
+              <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Nuestros Valores</CardTitle>
             </CardHeader>
             <CardContent className="text-gray-600 dark:text-gray-400">
               Solidaridad, Respeto, Integridad, Compromiso y Empatía son los pilares de nuestro trabajo diario.
