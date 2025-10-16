@@ -16,31 +16,31 @@
     --primary: 270 70% 40%; /* Morado */
     --primary-foreground: 0 0% 100%; /* Blanco */
 
-    --secondary: 180 70% 50%; /* Cyan */
+    --secondary: 320 80% 50%; /* Magenta */
     --secondary-foreground: 222.2 84% 4.9%; /* Gris muy oscuro */
 
-    --muted: 210 40% 96.1%; /* Gris claro */
-    --muted-foreground: 215.4 16.3% 46.9%; /* Gris medio */
+    --muted: 0 0% 95%; /* Gris claro */
+    --muted-foreground: 0 0% 50%; /* Gris medio */
 
-    --accent: 180 70% 50%; /* Cyan */
+    --accent: 320 80% 50%; /* Magenta */
     --accent-foreground: 222.2 84% 4.9%; /* Gris muy oscuro */
 
     --destructive: 0 84.2% 60.2%; /* Rojo (mantener para errores) */
-    --destructive-foreground: 210 40% 98%; /* Blanco roto */
+    --destructive-foreground: 0 0% 100%; /* Blanco */
 
-    --border: 214.3 31.8% 91.4%; /* Gris claro para bordes */
-    --input: 214.3 31.8% 91.4%; /* Gris claro para inputs */
+    --border: 0 0% 85%; /* Gris para bordes */
+    --input: 0 0% 95%; /* Gris claro para inputs */
     --ring: 270 70% 40%; /* Morado para anillos de foco */
 
     --radius: 0.5rem;
 
-    --sidebar-background: 222.2 84% 4.9%; /* Gris muy oscuro, casi negro */
+    --sidebar-background: 222.2 84% 4.9%; /* Gris muy oscuro */
     --sidebar-foreground: 0 0% 100%; /* Blanco */
     --sidebar-primary: 270 70% 40%; /* Morado */
     --sidebar-primary-foreground: 0 0% 100%; /* Blanco */
-    --sidebar-accent: 180 70% 50%; /* Cyan */
+    --sidebar-accent: 320 80% 50%; /* Magenta */
     --sidebar-accent-foreground: 222.2 84% 4.9%; /* Gris muy oscuro */
-    --sidebar-border: 217.2 32.6% 17.5%; /* Gris oscuro */
+    --sidebar-border: 0 0% 30%; /* Gris oscuro */
     --sidebar-ring: 270 70% 40%; /* Morado */
   }
 
@@ -57,29 +57,29 @@
     --primary: 270 70% 40%; /* Morado */
     --primary-foreground: 210 40% 98%; /* Blanco roto */
 
-    --secondary: 180 70% 50%; /* Cyan */
+    --secondary: 320 80% 50%; /* Magenta */
     --secondary-foreground: 210 40% 98%; /* Blanco roto */
 
-    --muted: 217.2 32.6% 17.5%; /* Gris oscuro */
-    --muted-foreground: 215 20.2% 65.1%; /* Gris medio */
+    --muted: 0 0% 20%; /* Gris oscuro */
+    --muted-foreground: 0 0% 60%; /* Gris medio */
 
-    --accent: 180 70% 50%; /* Cyan */
+    --accent: 320 80% 50%; /* Magenta */
     --accent-foreground: 210 40% 98%; /* Blanco roto */
 
     --destructive: 0 62.8% 30.6%; /* Rojo oscuro (mantener para errores) */
     --destructive-foreground: 210 40% 98%; /* Blanco roto */
 
-    --border: 217.2 32.6% 17.5%; /* Gris oscuro para bordes */
-    --input: 217.2 32.6% 17.5%; /* Gris oscuro para inputs */
+    --border: 0 0% 25%; /* Gris oscuro para bordes */
+    --input: 0 0% 20%; /* Gris oscuro para inputs */
     --ring: 270 70% 40%; /* Morado para anillos de foco */
 
     --sidebar-background: 222.2 84% 4.9%; /* Gris muy oscuro, casi negro */
     --sidebar-foreground: 210 40% 98%; /* Blanco roto */
     --sidebar-primary: 270 70% 40%; /* Morado */
     --sidebar-primary-foreground: 210 40% 98%; /* Blanco roto */
-    --sidebar-accent: 180 70% 50%; /* Cyan */
+    --sidebar-accent: 320 80% 50%; /* Magenta */
     --sidebar-accent-foreground: 210 40% 98%; /* Blanco roto */
-    --sidebar-border: 217.2 32.6% 17.5%; /* Gris oscuro */
+    --sidebar-border: 0 0% 25%; /* Gris oscuro */
     --sidebar-ring: 270 70% 40%; /* Morado */
   }
 }
