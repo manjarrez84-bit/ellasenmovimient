@@ -20,7 +20,7 @@ const AboutSection = () => {
               style={{ backgroundImage: "url('/mission-background.jpg')" }}
             ></div>
             {/* Overlay for readability */}
-            <div className="absolute inset-0 bg-black opacity-40"></div>
+            <div className="absolute inset-0 bg-black opacity-20"></div>
 
             <CardHeader className="flex flex-col items-center relative z-10">
               <Goal className="text-white mb-4" size={40} />
