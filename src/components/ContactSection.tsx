@@ -38,7 +38,7 @@ const ContactSection = () => {
               <CardTitle className="text-xl font-semibold mb-2 dark:text-primary-foreground">Correo Electrónico</CardTitle>
             </CardHeader>
             <CardContent className="text-gray-600 dark:text-gray-400">
-              info@ellasenmovimiento.org.mx
+              ellasenmov@gmail.com
             </CardContent>
           </Card>
         </div>
