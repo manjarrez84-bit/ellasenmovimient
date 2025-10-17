@@ -29,8 +29,8 @@ const Header = () => {
   const linkClasses = cn(
     "font-bold transition-colors",
     scrolled
-      ? "text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground"
-      : "text-white hover:text-white/80"
+      ? "text-black hover:text-gray-700 dark:text-gray-300 dark:hover:text-primary-foreground"
+      : "text-black hover:text-gray-700"
   );
 
   return (
@@ -43,7 +43,7 @@ const Header = () => {
           <img src="/logo.jpg" alt="Ellas en Movimiento A.C. Logo" className="h-10 w-auto" />
           <span className={cn(
             "text-2xl font-bold transition-colors",
-            scrolled ? "text-primary dark:text-primary-foreground" : "text-white"
+            scrolled ? "text-black dark:text-primary-foreground" : "text-black"
           )}>
             Ellas en Movimiento
           </span>
@@ -65,7 +65,7 @@ const Header = () => {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className={cn(scrolled ? "text-primary" : "text-white border-white hover:text-white hover:bg-white/20")}>
+              <Button variant="outline" size="icon" className={cn(scrolled ? "text-black border-black" : "text-black border-black hover:bg-black/10")}>
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
