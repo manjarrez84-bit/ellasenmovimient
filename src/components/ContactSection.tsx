@@ -28,9 +28,9 @@ const ContactSection = () => {
               <CardTitle className="text-xl font-semibold mb-2">Teléfono</CardTitle>
             </CardHeader>
             <CardContent className="text-muted-foreground">
-              <p>8112664221</p>
-              <p>8183641257</p>
-              <p>8137142927</p>
+              <p className="font-bold mb-2">+52 8112664221</p>
+              <p className="font-bold mb-2">+52 8183641257</p>
+              <p className="font-bold">+52 8137142927</p>
             </CardContent>
           </Card>
 
