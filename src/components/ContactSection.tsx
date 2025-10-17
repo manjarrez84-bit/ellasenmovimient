@@ -18,7 +18,7 @@ const ContactSection = () => {
               <CardTitle className="text-xl font-semibold mb-2">Dirección</CardTitle>
             </CardHeader>
             <CardContent className="text-muted-foreground">
-              Calle Ficticia #123, Colonia Ejemplo, Ciudad de México, México.
+              Porfirio Díaz 426 Nte. Col. Centro, Monterrey, Nuevo León, México.
             </CardContent>
           </Card>
 
