@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    --primary: 259 95% 45%; /* Even Darker Purple */
+    --primary: 259 95% 40%; /* Deep Purple */
     --primary-foreground: 0 0% 100%; /* White */
 
     --secondary: 180 100% 40%; /* Cyan */
@@ -25,24 +25,24 @@
     --accent: 180 100% 40%; /* Cyan */
     --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 259 95% 55%; /* Darker Purple */
+    --destructive: 259 95% 50%; /* Medium Purple */
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 89.8%;
     --input: 0 0% 89.8%;
-    --ring: 259 95% 45%; /* Even Darker Purple */
+    --ring: 259 95% 40%; /* Deep Purple */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 0 0% 3.9%; /* Near Black */
+    --background: 259 10% 4%; /* Very Dark Purple */
     --foreground: 0 0% 98%; /* Near White */
 
-    --card: 0 0% 3.9%;
+    --card: 259 10% 4%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 3.9%;
+    --popover: 259 10% 4%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 259 95% 45%; /* Even Darker Purple */
@@ -51,7 +51,7 @@
     --secondary: 180 100% 40%; /* Cyan */
     --secondary-foreground: 0 0% 100%; /* White */
 
-    --muted: 0 0% 14.9%;
+    --muted: 259 10% 15%;
     --muted-foreground: 0 0% 63.9%;
 
     --accent: 180 100% 40%; /* Cyan */
@@ -60,8 +60,8 @@
     --destructive: 259 95% 55%; /* Darker Purple */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
+    --border: 259 10% 15%;
+    --input: 259 10% 15%;
     --ring: 259 95% 45%; /* Even Darker Purple */
   }
 }
