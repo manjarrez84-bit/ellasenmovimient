@@ -21,6 +21,7 @@ const Header = () => {
       <Link to="/" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Inicio</Link>
       <Link to="/about" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Nosotras</Link>
       <Link to="/programs" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Programas</Link>
+      <Link to="/blog" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Blog</Link>
       <Link to="/how-to-help" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Cómo Ayudar</Link>
       <Link to="/faq" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">FAQ</Link>
       <Link to="/contact" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Contacto</Link>
@@ -64,6 +65,7 @@ const Header = () => {
                 <SheetClose asChild><Link to="/">Inicio</Link></SheetClose>
                 <SheetClose asChild><Link to="/about">Nosotras</Link></SheetClose>
                 <SheetClose asChild><Link to="/programs">Programas</Link></SheetClose>
+                <SheetClose asChild><Link to="/blog">Blog</Link></SheetClose>
                 <SheetClose asChild><Link to="/how-to-help">Cómo Ayudar</Link></SheetClose>
                 <SheetClose asChild><Link to="/faq">FAQ</Link></SheetClose>
                 <SheetClose asChild><Link to="/contact">Contacto</Link></SheetClose>
