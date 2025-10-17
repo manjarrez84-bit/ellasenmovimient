@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white"
+      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-foreground"
       style={{ backgroundImage: "url('/hero-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center bottom' }}
     >
-      <div className="absolute inset-0 bg-black/80 z-0" />
+      <div className="absolute inset-0 z-0" />
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">
           Empoderando Mujeres, Transformando Vidas.
