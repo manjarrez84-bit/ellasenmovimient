@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="h-[75vh] flex flex-col items-center justify-center text-center text-primary-foreground bg-primary"
+      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white"
+      style={{ backgroundImage: "url('/hero-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center bottom' }}
     >
-      <div className="p-6 max-w-4xl flex flex-col items-center">
+      <div className="absolute inset-0 bg-black/50 z-0" />
+      <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">
           Empoderando Mujeres, Transformando Vidas.
         </h1>
@@ -15,7 +17,7 @@ const HeroSection = () => {
           Brindamos apoyo integral a mujeres en situación de violencia y pobreza, ofreciéndoles las herramientas para construir un futuro digno y libre.
         </p>
         <Link to="/how-to-help">
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-3">
             Únete a Nuestra Causa
           </Button>
         </Link>
