@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { ThemeToggle } from '../theme-toggle';
 
 const navItems = [
   { href: '/', label: 'Inicio' },
@@ -26,7 +27,7 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const linkClasses = "font-bold text-black hover:text-gray-700 dark:text-gray-300 dark:hover:text-white";
+  const linkClasses = "font-bold text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-300";
 
   return (
     <header className={cn(
@@ -36,7 +37,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img src="/logo.jpg" alt="Ellas en Movimiento A.C. Logo" className="h-10 w-auto" />
-          <span className="text-2xl font-bold text-black dark:text-black">
+          <span className="text-2xl font-bold text-black dark:text-white">
             Ellas en Movimiento
           </span>
         </Link>
@@ -48,13 +49,15 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
+          <ThemeToggle />
           <Link to="/donate">
             <Button>Donar</Button>
           </Link>
         </div>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center space-x-2">
+          <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="text-black border-black dark:text-white dark:border-white">
@@ -80,6 +83,3 @@ const Header = () => {
       </nav>
     </header>
   );
-};
-
-export default Header;
