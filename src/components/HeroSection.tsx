@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-primary-foreground"
+      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-foreground"
       style={{ backgroundImage: "url('/hero-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center bottom' }}
     >
       <div className="absolute inset-0 z-0" />
@@ -13,7 +13,7 @@ const HeroSection = () => {
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
           Empoderando Mujeres, Transformando Vidas.
         </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl drop-shadow-lg">
+        <p className="text-lg md:text-xl mb-8 max-w-2xl drop-shadow-lg font-bold">
           Brindamos apoyo integral a mujeres en situación de violencia y pobreza, ofreciéndoles las herramientas para construir un futuro digno y libre.
         </p>
         <Link to="/how-to-help">
