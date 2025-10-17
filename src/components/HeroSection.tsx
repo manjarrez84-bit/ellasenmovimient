@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0" />
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
-          Empoderando Mujeres, Transformando Vidas.
+          Movimiento que Libera. Apoyo que Construye.
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl drop-shadow-lg font-bold">
           Brindamos apoyo integral a mujeres en situación de violencia y pobreza, ofreciéndoles las herramientas para construir un futuro digno y libre.
