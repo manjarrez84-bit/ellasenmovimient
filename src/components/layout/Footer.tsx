@@ -15,6 +15,7 @@ const Footer = () => {
             <Link to="/" className="hover:underline">Inicio</Link>
             <Link to="/about" className="hover:underline">Nosotras</Link>
             <Link to="/programs" className="hover:underline">Programas</Link>
+            <Link to="/faq" className="hover:underline">FAQ</Link>
             <Link to="/contact" className="hover:underline">Contacto</Link>
           </div>
           <div className="flex space-x-4">
