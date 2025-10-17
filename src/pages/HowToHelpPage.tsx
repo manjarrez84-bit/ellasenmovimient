@@ -18,59 +18,59 @@ const HowToHelpPage = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="py-16 bg-gray-50 dark:bg-gray-800 text-center">
+        <section className="py-16 bg-muted/30 text-center">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-primary mb-8 dark:text-primary-foreground">Cómo Puedes Ayudar</h1>
-            <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto dark:text-gray-300">
+            <h1 className="text-4xl font-bold text-primary mb-8">Cómo Puedes Ayudar</h1>
+            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
               Tu apoyo es fundamental para que Ellas en Movimiento, A.C. pueda seguir transformando vidas. Hay muchas maneras de contribuir a nuestra causa.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
+              <Card className="p-6 shadow-lg">
                 <CardHeader className="flex flex-col items-center">
                   <DollarSign className="text-primary mb-4" size={40} />
-                  <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Haz una Donación</CardTitle>
+                  <CardTitle className="text-2xl font-semibold mb-2">Haz una Donación</CardTitle>
                 </CardHeader>
-                <CardContent className="text-gray-600 dark:text-gray-400">
+                <CardContent className="text-muted-foreground">
                   Cada contribución económica nos permite mantener nuestros programas y llegar a más mujeres. Tu generosidad hace una diferencia real.
                   <div className="mt-6">
                     <Link to="/donate">
-                      <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Donar Ahora</Button>
+                      <Button>Donar Ahora</Button>
                     </Link>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
+              <Card className="p-6 shadow-lg">
                 <CardHeader className="flex flex-col items-center">
                   <HandHeart className="text-primary mb-4" size={40} />
-                  <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Sé Voluntario</CardTitle>
+                  <CardTitle className="text-2xl font-semibold mb-2">Sé Voluntario</CardTitle>
                 </CardHeader>
-                <CardContent className="text-gray-600 dark:text-gray-400">
+                <CardContent className="text-muted-foreground">
                   Ofrece tu tiempo y tus habilidades para apoyar en nuestros talleres, eventos o en la gestión diaria de la asociación.
                   <div className="mt-6">
                     <Link to="/volunteer">
-                      <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">Quiero Ser Voluntario</Button>
+                      <Button variant="outline">Quiero Ser Voluntario</Button>
                     </Link>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600">
+              <Card className="p-6 shadow-lg">
                 <CardHeader className="flex flex-col items-center">
                   <Users className="text-primary mb-4" size={40} />
-                  <CardTitle className="text-2xl font-semibold mb-2 dark:text-primary-foreground">Difunde Nuestra Causa</CardTitle>
+                  <CardTitle className="text-2xl font-semibold mb-2">Difunde Nuestra Causa</CardTitle>
                 </CardHeader>
-                <CardContent className="text-gray-600 dark:text-gray-400">
+                <CardContent className="text-muted-foreground">
                   Ayúdanos a crear conciencia sobre la violencia de género y la importancia de empoderar a las mujeres compartiendo nuestro mensaje.
                   <div className="mt-6 flex justify-center space-x-4">
                     <a href={facebookShareUrl} target="_blank" rel="noopener noreferrer" aria-label="Compartir en Facebook">
-                      <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <Button variant="outline" size="icon">
                         <Facebook className="h-5 w-5" />
                       </Button>
                     </a>
                     <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer" aria-label="Compartir en Twitter">
-                      <Button variant="outline" size="icon" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <Button variant="outline" size="icon">
                         <Twitter className="h-5 w-5" />
                       </Button>
                     </a>

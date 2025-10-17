@@ -10,11 +10,11 @@ const BlogPage = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="py-24 bg-gray-50 dark:bg-gray-900">
+        <section className="py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h1 className="text-4xl font-bold text-primary mb-4 dark:text-primary-foreground">Noticias y Actualizaciones</h1>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto dark:text-gray-300">
+              <h1 className="text-4xl font-bold text-primary mb-4">Noticias y Actualizaciones</h1>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Mantente al día con nuestras últimas noticias, historias de impacto y próximos eventos.
               </p>
             </div>

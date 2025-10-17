@@ -18,7 +18,7 @@ const BlogPostPage = () => {
         <main className="flex-grow flex items-center justify-center text-center">
           <div>
             <h1 className="text-4xl font-bold text-primary mb-4">Publicación no encontrada</h1>
-            <p className="text-lg text-gray-700 mb-8">Lo sentimos, no pudimos encontrar el artículo que estás buscando.</p>
+            <p className="text-lg text-muted-foreground mb-8">Lo sentimos, no pudimos encontrar el artículo que estás buscando.</p>
             <Link to="/blog">
               <Button>Volver al Blog</Button>
             </Link>
@@ -33,7 +33,7 @@ const BlogPostPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow py-24 bg-white dark:bg-gray-900">
+      <main className="flex-grow py-24 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <article>
             <div className="mb-8">
@@ -42,12 +42,12 @@ const BlogPostPage = () => {
                 Volver a todas las publicaciones
               </Link>
             </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4 dark:text-primary-foreground">{post.title}</h1>
-            <p className="text-md text-gray-500 dark:text-gray-400 mb-8">{post.date} por {post.author}</p>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">{post.title}</h1>
+            <p className="text-md text-muted-foreground mb-8">{post.date} por {post.author}</p>
             
             <img src={post.imageUrl} alt={post.title} className="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-lg mb-8" />
 
-            <div className="prose lg:prose-xl max-w-none dark:prose-invert text-gray-700 dark:text-gray-300">
+            <div className="prose lg:prose-xl max-w-none dark:prose-invert text-muted-foreground">
               {/* En una aplicación real, aquí renderizarías el contenido de Markdown o HTML */}
               <p className="lead mb-6">{post.summary}</p>
               <p>{post.content}</p>

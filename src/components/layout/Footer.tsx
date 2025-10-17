@@ -5,7 +5,7 @@ import NewsletterForm from '../forms/NewsletterForm';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12 dark:bg-gray-900">
+    <footer className="bg-primary text-primary-foreground py-12 dark:bg-black">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
           {/* Columna 1: Info y Redes Sociales */}

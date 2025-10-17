@@ -27,21 +27,21 @@ const ProgramsSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-800">
+    <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-primary mb-12 dark:text-primary-foreground">Nuestros Programas</h2>
-        <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto dark:text-gray-300">
+        <h2 className="text-4xl font-bold text-primary mb-12">Nuestros Programas</h2>
+        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
           Trabajamos en diversas áreas para ofrecer un apoyo integral a las mujeres, adaptándonos a sus necesidades específicas.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {programs.map((program, index) => (
-            <Card key={index} className="p-6 shadow-lg dark:bg-gray-700 dark:border-gray-600 transition-transform transform hover:scale-105 hover:shadow-2xl">
+            <Card key={index} className="p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
               <CardHeader className="flex flex-col items-center">
                 {program.icon}
-                <CardTitle className="text-xl font-semibold mb-2 dark:text-primary-foreground">{program.title}</CardTitle>
+                <CardTitle className="text-xl font-semibold mb-2">{program.title}</CardTitle>
               </CardHeader>
-              <CardContent className="text-gray-600 dark:text-gray-400">
+              <CardContent className="text-muted-foreground">
                 {program.description}
               </CardContent>
             </Card>

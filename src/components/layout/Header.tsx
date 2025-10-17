@@ -27,17 +27,17 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const linkClasses = "font-bold text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-300";
+  const linkClasses = "font-bold text-foreground hover:text-muted-foreground";
 
   return (
     <header className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 bg-white dark:bg-gray-800",
+      "fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 bg-background",
       scrolled ? "shadow-md" : ""
     )}>
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img src="/logo.jpg" alt="Ellas en Movimiento A.C. Logo" className="h-10 w-auto" />
-          <span className="text-2xl font-bold text-black dark:text-white">
+          <span className="text-2xl font-bold text-foreground">
             Ellas en Movimiento
           </span>
         </Link>
@@ -60,7 +60,7 @@ const Header = () => {
           <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="text-black border-black dark:text-white dark:border-white">
+              <Button variant="outline" size="icon">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>

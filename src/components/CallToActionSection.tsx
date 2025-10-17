@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CallToActionSection = () => {
   return (
-    <section className="py-20 bg-primary text-primary-foreground text-center dark:bg-gray-900">
+    <section className="py-20 bg-primary text-primary-foreground text-center dark:bg-black">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-6">Tu Apoyo Hace la Diferencia</h2>
         <p className="text-xl mb-10 max-w-3xl mx-auto">
@@ -12,12 +12,12 @@ const CallToActionSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
           <Link to="/donate">
-            <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-3">
+            <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-lg px-8 py-3">
               Donar Ahora
             </Button>
           </Link>
           <Link to="/volunteer">
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-3">
+            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-3">
               Sé Voluntario
             </Button>
           </Link>

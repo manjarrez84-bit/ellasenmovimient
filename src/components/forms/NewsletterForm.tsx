@@ -32,20 +32,20 @@ const NewsletterForm = () => {
   return (
     <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col sm:flex-row gap-2 w-full max-w-sm">
       <div className="relative flex-grow">
-        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
         <Input
           id="newsletter-email"
           type="email"
           placeholder="tu@ejemplo.com"
-          className="pl-10 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700"
+          className="pl-10"
           {...form.register("email")}
         />
       </div>
-      <Button type="submit" className="bg-white text-primary hover:bg-gray-100" disabled={form.formState.isSubmitting}>
+      <Button type="submit" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90" disabled={form.formState.isSubmitting}>
         Suscribirse
       </Button>
       {form.formState.errors.email && (
-        <p className="text-red-400 text-sm mt-1 sm:absolute sm:bottom-[-20px]">{form.formState.errors.email.message}</p>
+        <p className="text-destructive text-sm mt-1 sm:absolute sm:bottom-[-20px]">{form.formState.errors.email.message}</p>
       )}
     </form>
   );

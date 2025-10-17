@@ -42,58 +42,54 @@ const ContactForm = () => {
   return (
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div>
-        <Label htmlFor="name" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Nombre Completo</Label>
+        <Label htmlFor="name" className="text-left block mb-2">Nombre Completo</Label>
         <Input
           id="name"
           type="text"
           placeholder="Tu nombre"
-          className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
           {...form.register("name")}
         />
         {form.formState.errors.name && (
-          <p className="text-red-500 text-sm mt-1">{form.formState.errors.name.message}</p>
+          <p className="text-destructive text-sm mt-1">{form.formState.errors.name.message}</p>
         )}
       </div>
       <div>
-        <Label htmlFor="email" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Correo Electrónico</Label>
+        <Label htmlFor="email" className="text-left block mb-2">Correo Electrónico</Label>
         <Input
           id="email"
           type="email"
           placeholder="tu@ejemplo.com"
-          className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
           {...form.register("email")}
         />
         {form.formState.errors.email && (
-          <p className="text-red-500 text-sm mt-1">{form.formState.errors.email.message}</p>
+          <p className="text-destructive text-sm mt-1">{form.formState.errors.email.message}</p>
         )}
       </div>
       <div>
-        <Label htmlFor="subject" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Asunto</Label>
+        <Label htmlFor="subject" className="text-left block mb-2">Asunto</Label>
         <Input
           id="subject"
           type="text"
           placeholder="Asunto del mensaje"
-          className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
           {...form.register("subject")}
         />
         {form.formState.errors.subject && (
-          <p className="text-red-500 text-sm mt-1">{form.formState.errors.subject.message}</p>
+          <p className="text-destructive text-sm mt-1">{form.formState.errors.subject.message}</p>
         )}
       </div>
       <div>
-        <Label htmlFor="message" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Mensaje</Label>
+        <Label htmlFor="message" className="text-left block mb-2">Mensaje</Label>
         <Textarea
           id="message"
           placeholder="Escribe tu mensaje aquí..."
           rows={5}
-          className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600"
           {...form.register("message")}
         />
         {form.formState.errors.message && (
-          <p className="text-red-500 text-sm mt-1">{form.formState.errors.message.message}</p>
+          <p className="text-destructive text-sm mt-1">{form.formState.errors.message.message}</p>
         )}
       </div>
-      <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" disabled={form.formState.isSubmitting}>
+      <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
         {form.formState.isSubmitting ? "Enviando..." : "Enviar Mensaje"}
       </Button>
     </form>

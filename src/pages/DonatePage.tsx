@@ -13,22 +13,22 @@ const DonatePage = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="py-16 bg-gray-50 dark:bg-gray-800 text-center">
+        <section className="py-16 bg-muted/30 text-center">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-primary mb-8 dark:text-primary-foreground">Haz tu Donación</h1>
-            <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto dark:text-gray-300">
+            <h1 className="text-4xl font-bold text-primary mb-8">Haz tu Donación</h1>
+            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
               Tu generosidad es la fuerza que impulsa nuestros programas. Cada donación, grande o pequeña, nos ayuda a brindar apoyo vital a mujeres en situación de vulnerabilidad.
             </p>
 
-            <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg dark:bg-gray-900 dark:border-gray-700">
-              <Card className="dark:bg-gray-800 dark:border-gray-700">
+            <div className="max-w-2xl mx-auto bg-card p-8 rounded-lg shadow-lg">
+              <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl font-semibold text-primary dark:text-primary-foreground">Elige tu Contribución</CardTitle>
+                  <CardTitle className="text-2xl font-semibold text-primary">Elige tu Contribución</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form className="space-y-6">
                     <div>
-                      <Label htmlFor="amount" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Monto de la Donación</Label>
+                      <Label htmlFor="amount" className="text-left block mb-2">Monto de la Donación</Label>
                       <RadioGroup defaultValue="500" className="flex flex-wrap justify-center gap-4 mb-4">
                         <div className="flex items-center space-x-2">
                           <RadioGroupItem value="100" id="r1" />
@@ -47,19 +47,19 @@ const DonatePage = () => {
                           <Label htmlFor="r4">MXN $1000</Label>
                         </div>
                       </RadioGroup>
-                      <Input id="custom-amount" type="number" placeholder="Otro monto (MXN)" className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600" />
+                      <Input id="custom-amount" type="number" placeholder="Otro monto (MXN)" />
                     </div>
 
                     <div>
-                      <Label htmlFor="name" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Nombre Completo</Label>
-                      <Input id="name" type="text" placeholder="Tu nombre" className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600" />
+                      <Label htmlFor="name" className="text-left block mb-2">Nombre Completo</Label>
+                      <Input id="name" type="text" placeholder="Tu nombre" />
                     </div>
                     <div>
-                      <Label htmlFor="email" className="text-left block mb-2 text-gray-700 dark:text-gray-300">Correo Electrónico</Label>
-                      <Input id="email" type="email" placeholder="tu@ejemplo.com" className="dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600" />
+                      <Label htmlFor="email" className="text-left block mb-2">Correo Electrónico</Label>
+                      <Input id="email" type="email" placeholder="tu@ejemplo.com" />
                     </div>
 
-                    <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Proceder al Pago</Button>
+                    <Button type="submit" size="lg" className="w-full">Proceder al Pago</Button>
                   </form>
                 </CardContent>
               </Card>
