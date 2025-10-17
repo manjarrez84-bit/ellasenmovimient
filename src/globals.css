@@ -16,16 +16,16 @@
     --primary: 259 95% 35%; /* Bolder Purple */
     --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 180 100% 40%; /* Cyan */
+    --secondary: 330 90% 60%; /* Vibrant Magenta */
     --secondary-foreground: 0 0% 100%; /* White */
 
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
 
-    --accent: 180 100% 40%; /* Cyan */
+    --accent: 330 90% 60%; /* Vibrant Magenta */
     --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 259 95% 45%; /* Darker Medium Purple */
+    --destructive: 0 84% 60%; /* Standard Red */
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 89.8%;
@@ -48,16 +48,16 @@
     --primary: 259 95% 40%; /* Deep Purple */
     --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 180 100% 40%; /* Cyan */
+    --secondary: 330 90% 65%; /* Vibrant Magenta (Dark) */
     --secondary-foreground: 0 0% 100%; /* White */
 
     --muted: 259 10% 15%;
     --muted-foreground: 0 0% 63.9%;
 
-    --accent: 180 100% 40%; /* Cyan */
+    --accent: 330 90% 65%; /* Vibrant Magenta (Dark) */
     --accent-foreground: 0 0% 100%; /* White */
 
-    --destructive: 259 95% 50%; /* Medium Purple */
+    --destructive: 0 72% 51%; /* Standard Red (Dark) */
     --destructive-foreground: 0 0% 100%;
 
     --border: 259 10% 15%;
