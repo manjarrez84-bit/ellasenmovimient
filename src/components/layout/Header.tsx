@@ -5,6 +5,16 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/s
 import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+const navItems = [
+  { href: '/', label: 'Inicio' },
+  { href: '/about', label: 'Nosotras' },
+  { href: '/programs', label: 'Programas' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/how-to-help', label: 'Cómo Ayudar' },
+  { href: '/faq', label: 'FAQ' },
+  { href: '/contact', label: 'Contacto' },
+];
+
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -16,16 +26,11 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = (
-    <>
-      <Link to="/" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Inicio</Link>
-      <Link to="/about" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Nosotras</Link>
-      <Link to="/programs" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Programas</Link>
-      <Link to="/blog" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Blog</Link>
-      <Link to="/how-to-help" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Cómo Ayudar</Link>
-      <Link to="/faq" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">FAQ</Link>
-      <Link to="/contact" className="text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground">Contacto</Link>
-    </>
+  const linkClasses = cn(
+    "font-bold transition-colors",
+    scrolled
+      ? "text-gray-700 hover:text-primary dark:text-gray-300 dark:hover:text-primary-foreground"
+      : "text-white hover:text-white/80"
   );
 
   return (
@@ -46,7 +51,11 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
-          {navLinks}
+          {navItems.map((item) => (
+            <Link key={item.href} to={item.href} className={linkClasses}>
+              {item.label}
+            </Link>
+          ))}
           <Link to="/donate">
             <Button>Donar</Button>
           </Link>
@@ -62,13 +71,11 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[250px] sm:w-[300px]">
               <div className="flex flex-col space-y-6 p-6">
-                <SheetClose asChild><Link to="/">Inicio</Link></SheetClose>
-                <SheetClose asChild><Link to="/about">Nosotras</Link></SheetClose>
-                <SheetClose asChild><Link to="/programs">Programas</Link></SheetClose>
-                <SheetClose asChild><Link to="/blog">Blog</Link></SheetClose>
-                <SheetClose asChild><Link to="/how-to-help">Cómo Ayudar</Link></SheetClose>
-                <SheetClose asChild><Link to="/faq">FAQ</Link></SheetClose>
-                <SheetClose asChild><Link to="/contact">Contacto</Link></SheetClose>
+                {navItems.map((item) => (
+                  <SheetClose asChild key={item.href}>
+                    <Link to={item.href}>{item.label}</Link>
+                  </SheetClose>
+                ))}
                 <SheetClose asChild>
                   <Link to="/donate">
                     <Button className="w-full">Donar</Button>
