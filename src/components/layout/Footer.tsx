@@ -1,19 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
-import NewsletterForm from '../forms/NewsletterForm';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12 dark:bg-gray-900">
+    <footer className="bg-primary text-primary-foreground py-8 dark:bg-gray-900">
       <div className="container mx-auto px-4 text-center">
-        
-        <div className="mb-10">
-          <h3 className="text-2xl font-bold mb-2">Suscríbete a Nuestro Boletín</h3>
-          <p className="text-sm mb-4 max-w-xl mx-auto">Recibe nuestras últimas noticias, historias de impacto y formas de ayudar directamente en tu correo.</p>
-          <NewsletterForm />
-        </div>
-
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-bold">Ellas en Movimiento, A.C.</h3>
