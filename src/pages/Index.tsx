@@ -8,6 +8,7 @@ import ProgramsSection from '@/components/ProgramsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CallToActionSection from '@/components/CallToActionSection';
 import ContactSection from '@/components/ContactSection';
+import AnimatedSection from '@/components/AnimatedSection';
 
 const Index = () => {
   return (
@@ -15,11 +16,21 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <AboutSection />
-        <ProgramsSection />
-        <TestimonialsSection />
-        <CallToActionSection />
-        <ContactSection />
+        <AnimatedSection>
+          <AboutSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <ProgramsSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <TestimonialsSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <CallToActionSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <ContactSection />
+        </AnimatedSection>
       </main>
       <Footer />
       <MadeWithDyad />
