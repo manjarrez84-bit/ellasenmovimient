@@ -50,7 +50,7 @@ const HowToHelpPage = () => {
                   Ofrece tu tiempo y tus habilidades para apoyar en nuestros talleres, eventos o en la gestión diaria de la asociación.
                   <div className="mt-6">
                     <Link to="/volunteer">
-                      <Button variant="outline">Quiero Ser Voluntario</Button>
+                      <Button>Quiero Ser Voluntario</Button>
                     </Link>
                   </div>
                 </CardContent>

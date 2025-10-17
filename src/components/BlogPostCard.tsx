@@ -22,7 +22,7 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({ post }) => {
       </CardContent>
       <CardFooter>
         <Link to={`/blog/${post.id}`} className="w-full">
-          <Button variant="outline" className="w-full">
+          <Button className="w-full">
             Leer Más <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </Link>

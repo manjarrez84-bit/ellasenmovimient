@@ -17,7 +17,7 @@ const HeroSection = () => {
           Brindamos apoyo integral a mujeres en situación de violencia y pobreza, ofreciéndoles las herramientas para construir un futuro digno y libre.
         </p>
         <Link to="/how-to-help">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-3">
+          <Button size="lg">
             Únete a Nuestra Causa
           </Button>
         </Link>
