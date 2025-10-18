@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { BlogPost } from '@/data/blogPosts';
+import { BlogPost } from '@/types';
 import { ArrowRight } from 'lucide-react';
 
 interface BlogPostCardProps {
@@ -12,10 +12,10 @@ interface BlogPostCardProps {
 const BlogPostCard: React.FC<BlogPostCardProps> = ({ post }) => {
   return (
     <Card className="flex flex-col overflow-hidden transition-shadow hover:shadow-xl">
-      <img src={post.imageUrl} alt={post.title} className="w-full h-48 object-cover" />
+      <img src={post.image_url} alt={post.title} className="w-full h-48 object-cover" />
       <CardHeader>
         <CardTitle className="text-xl font-bold text-primary">{post.title}</CardTitle>
-        <p className="text-sm text-muted-foreground">{post.date} por {post.author}</p>
+        <p className="text-sm text-muted-foreground">{new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })} por {post.author}</p>
       </CardHeader>
       <CardContent className="flex-grow">
         <p className="text-muted-foreground">{post.summary}</p>
