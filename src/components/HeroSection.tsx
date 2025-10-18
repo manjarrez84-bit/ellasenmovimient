@@ -18,7 +18,7 @@ const HeroSection = () => {
       </div>
 
       {/* Contenido */}
-      <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center bg-secondary/80 rounded-xl text-secondary-foreground">
+      <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
           ELLAS CAMBIAN TODO LO QUE TOCAN, TODO LO QUE TOCAN CAMBIAN
         </h1>
