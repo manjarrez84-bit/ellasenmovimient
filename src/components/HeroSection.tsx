@@ -10,10 +10,10 @@ const HeroSection = () => {
       {/* Logo de fondo con transparencia */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/logo.jpg" 
+          src="/fondo.png" 
           alt="" 
           aria-hidden="true"
-          className="w-full h-full object-contain opacity-10"
+          className="w-full h-full object-cover opacity-10"
         />
       </div>
 
