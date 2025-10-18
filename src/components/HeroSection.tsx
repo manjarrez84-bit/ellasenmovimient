@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[70vh] flex flex-col items-center justify-center text-center text-foreground pt-32"
+      className="relative h-[60vh] flex flex-col items-center justify-center text-center text-foreground pt-24"
     >
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0">
@@ -13,13 +13,13 @@ const HeroSection = () => {
           src="/fondo.jpg" 
           alt="" 
           aria-hidden="true"
-          className="w-full h-full object-cover opacity-[.95]"
+          className="w-full h-full object-cover opacity-80"
         />
       </div>
 
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
           ELLAS CAMBIAN TODO LO QUE TOCAN, TODO LO QUE TOCAN CAMBIAN
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl drop-shadow-lg font-bold">
