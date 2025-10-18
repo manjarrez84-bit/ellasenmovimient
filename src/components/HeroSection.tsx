@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* Imagen de fondo */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/fondo.png" 
+          src="/fondo.jpg" 
           alt="" 
           aria-hidden="true"
           className="w-full h-full object-cover opacity-[.93]"
