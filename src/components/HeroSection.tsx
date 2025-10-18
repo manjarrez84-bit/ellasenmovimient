@@ -5,17 +5,16 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white pt-32"
+      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-foreground pt-32 bg-muted/20"
     >
-      {/* Background Image & Overlay */}
+      {/* Logo de fondo con transparencia */}
       <div className="absolute inset-0 z-0">
         <img 
           src="/fondo.png" 
           alt="" 
           aria-hidden="true"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-10"
         />
-        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Contenido */}
