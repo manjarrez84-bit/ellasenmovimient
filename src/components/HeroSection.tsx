@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-foreground"
+      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-foreground pt-20"
       style={{ backgroundImage: "url('/hero-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center bottom' }}
     >
       <div className="absolute inset-0 z-0" />
