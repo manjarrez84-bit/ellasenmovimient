@@ -1,12 +1,9 @@
 import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MadeWithDyad } from '@/components/made-with-dyad';
+import VolunteerForm from '@/components/forms/VolunteerForm';
 
 const VolunteerPage = () => {
   return (
@@ -26,29 +23,7 @@ const VolunteerPage = () => {
                   <CardTitle className="text-2xl font-semibold text-primary">Formulario de Voluntariado</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-6">
-                    <div>
-                      <Label htmlFor="name" className="text-left block mb-2">Nombre Completo</Label>
-                      <Input id="name" type="text" placeholder="Tu nombre" />
-                    </div>
-                    <div>
-                      <Label htmlFor="email" className="text-left block mb-2">Correo Electrónico</Label>
-                      <Input id="email" type="email" placeholder="tu@ejemplo.com" />
-                    </div>
-                    <div>
-                      <Label htmlFor="phone" className="text-left block mb-2">Teléfono</Label>
-                      <Input id="phone" type="tel" placeholder="+52 55 1234 5678" />
-                    </div>
-                    <div>
-                      <Label htmlFor="skills" className="text-left block mb-2">Habilidades o Áreas de Interés</Label>
-                      <Textarea id="skills" placeholder="Ej: Asesoría legal, apoyo psicológico, organización de eventos, diseño gráfico, etc." rows={3} />
-                    </div>
-                    <div>
-                      <Label htmlFor="availability" className="text-left block mb-2">Disponibilidad</Label>
-                      <Input id="availability" type="text" placeholder="Ej: Lunes y Miércoles por la tarde" />
-                    </div>
-                    <Button type="submit" className="w-full">Enviar Solicitud</Button>
-                  </form>
+                  <VolunteerForm />
                 </CardContent>
               </Card>
             </div>
