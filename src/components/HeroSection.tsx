@@ -5,10 +5,19 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-foreground pt-32"
-      style={{ backgroundImage: "url('/hero-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center bottom' }}
+      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-foreground pt-32 bg-muted/20"
     >
-      <div className="absolute inset-0 z-0" />
+      {/* Logo de fondo con transparencia */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/logo.jpg" 
+          alt="" 
+          aria-hidden="true"
+          className="w-full h-full object-contain opacity-10"
+        />
+      </div>
+
+      {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight drop-shadow-lg">
           ELLAS CAMBIAN TODO LO QUE TOCAN, TODO LO QUE TOCAN CAMBIAN
