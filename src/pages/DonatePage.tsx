@@ -1,12 +1,9 @@
 import React from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MadeWithDyad } from '@/components/made-with-dyad';
+import DonationForm from '@/components/forms/DonationForm';
 
 const DonatePage = () => {
   return (
@@ -26,41 +23,7 @@ const DonatePage = () => {
                   <CardTitle className="text-2xl font-semibold text-primary">Elige tu Contribución</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-6">
-                    <div>
-                      <Label htmlFor="amount" className="text-left block mb-2">Monto de la Donación</Label>
-                      <RadioGroup defaultValue="500" className="flex flex-wrap justify-center gap-4 mb-4">
-                        <div className="flex items-center space-x-2">
-                          <RadioGroupItem value="100" id="r1" />
-                          <Label htmlFor="r1">MXN $100</Label>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <RadioGroupItem value="250" id="r2" />
-                          <Label htmlFor="r2">MXN $250</Label>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <RadioGroupItem value="500" id="r3" />
-                          <Label htmlFor="r3">MXN $500</Label>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <RadioGroupItem value="1000" id="r4" />
-                          <Label htmlFor="r4">MXN $1000</Label>
-                        </div>
-                      </RadioGroup>
-                      <Input id="custom-amount" type="number" placeholder="Otro monto (MXN)" />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="name" className="text-left block mb-2">Nombre Completo</Label>
-                      <Input id="name" type="text" placeholder="Tu nombre" />
-                    </div>
-                    <div>
-                      <Label htmlFor="email" className="text-left block mb-2">Correo Electrónico</Label>
-                      <Input id="email" type="email" placeholder="tu@ejemplo.com" />
-                    </div>
-
-                    <Button type="submit" size="lg" className="w-full">Proceder al Pago</Button>
-                  </form>
+                  <DonationForm />
                 </CardContent>
               </Card>
             </div>
