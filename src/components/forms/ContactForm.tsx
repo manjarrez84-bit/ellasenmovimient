@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
+import { supabase } from '@/lib/supabase';
 
 // Esquema de validación con Zod
 const contactFormSchema = z.object({
@@ -31,12 +32,29 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = (values: ContactFormValues) => {
-    // Aquí es donde enviarías los datos del formulario a tu backend o servicio de correo.
-    // Por ahora, solo mostraremos un toast de éxito.
-    console.log("Formulario enviado:", values);
-    toast.success("¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.");
-    form.reset(); // Limpiar el formulario después del envío
+  const onSubmit = async (values: ContactFormValues) => {
+    try {
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert([
+          { 
+            name: values.name, 
+            email: values.email, 
+            subject: values.subject, 
+            message: values.message 
+          }
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      toast.success("¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.");
+      form.reset(); // Limpiar el formulario después del envío
+    } catch (error) {
+      console.error("Error al enviar el mensaje:", error);
+      toast.error("Ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo.");
+    }
   };
 
   return (
