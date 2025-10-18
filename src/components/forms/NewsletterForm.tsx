@@ -27,7 +27,7 @@ const NewsletterForm = () => {
   const onSubmit = async (values: NewsletterFormValues) => {
     try {
       const { error } = await supabase
-        .from('subscriptions')
+        .from('SUBSCRIPTIONS') // Corregido: de 'subscriptions' a 'SUBSCRIPTIONS'
         .insert([{ email: values.email }]);
 
       if (error) {
