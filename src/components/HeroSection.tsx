@@ -13,7 +13,7 @@ const HeroSection = () => {
           src="/fondo.png" 
           alt="" 
           aria-hidden="true"
-          className="w-full h-full object-cover opacity-[.87]"
+          className="w-full h-full object-cover opacity-[.93]"
         />
       </div>
 
