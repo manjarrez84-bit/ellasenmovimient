@@ -45,7 +45,7 @@ const AboutSection = () => {
                 <div className="flex items-start space-x-4">
                   <Heart className="text-primary mt-1" size={24} />
                   <p className="text-muted-foreground">
-                    Solidaridad, Respeto, Integridad, Compromiso y Empatía son los pilares de nuestro trabajo diario.
+                    Dignidad. Sororidad y solidaridad. Empoderamiento femenino. Equidad. Libertad.
                   </p>
                 </div>
               </TabsContent>
