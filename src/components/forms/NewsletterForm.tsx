@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
 import { Mail } from 'lucide-react';
+import { supabase } from '@/lib/supabase';
 
 const newsletterFormSchema = z.object({
   email: z.string().email({ message: "Por favor, introduce un correo electrónico válido." }),
@@ -23,10 +24,26 @@ const NewsletterForm = () => {
     },
   });
 
-  const onSubmit = (values: NewsletterFormValues) => {
-    console.log("Suscripción al boletín:", values);
-    toast.success("¡Gracias por suscribirte! Te mantendremos al tanto.");
-    form.reset();
+  const onSubmit = async (values: NewsletterFormValues) => {
+    try {
+      const { error } = await supabase
+        .from('subscriptions')
+        .insert([{ email: values.email }]);
+
+      if (error) {
+        if (error.code === '23505') { // Error de violación de unicidad
+          toast.error("Este correo electrónico ya está suscrito.");
+        } else {
+          throw error;
+        }
+      } else {
+        toast.success("¡Gracias por suscribirte! Te mantendremos al tanto.");
+        form.reset();
+      }
+    } catch (error) {
+      console.error("Error al suscribirse:", error);
+      toast.error("Ocurrió un error al intentar suscribirte. Por favor, inténtalo de nuevo.");
+    }
   };
 
   return (
@@ -42,7 +59,7 @@ const NewsletterForm = () => {
         />
       </div>
       <Button type="submit" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90" disabled={form.formState.isSubmitting}>
-        Suscribirse
+        {form.formState.isSubmitting ? "Enviando..." : "Suscribirse"}
       </Button>
       {form.formState.errors.email && (
         <p className="text-destructive text-sm mt-1 sm:absolute sm:bottom-[-20px]">{form.formState.errors.email.message}</p>
