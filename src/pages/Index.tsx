@@ -9,6 +9,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import CallToActionSection from '@/components/CallToActionSection';
 import ContactSection from '@/components/ContactSection';
 import AnimatedSection from '@/components/AnimatedSection';
+import GallerySection from '@/components/GallerySection';
 
 const Index = () => {
   return (
@@ -24,6 +25,9 @@ const Index = () => {
         </AnimatedSection>
         <AnimatedSection>
           <TestimonialsSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <GallerySection />
         </AnimatedSection>
         <AnimatedSection>
           <CallToActionSection />
