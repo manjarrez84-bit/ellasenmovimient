@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MadeWithDyad } from '@/components/made-with-dyad';
 import DonationForm from '@/components/forms/DonationForm';
+import DonationImpact from '@/components/DonationImpact';
 
 const DonatePage = () => {
   return (
@@ -16,6 +17,8 @@ const DonatePage = () => {
             <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
               Tu generosidad es la fuerza que impulsa nuestros programas. Cada donación, grande o pequeña, nos ayuda a brindar apoyo vital a mujeres en situación de vulnerabilidad.
             </p>
+
+            <DonationImpact />
 
             <div className="max-w-2xl mx-auto bg-card p-8 rounded-lg shadow-lg">
               <Card>
