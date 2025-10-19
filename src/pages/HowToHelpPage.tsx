@@ -18,15 +18,20 @@ const HowToHelpPage = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="py-16 bg-muted/30 text-center">
-          <div className="container mx-auto px-4">
+        <section className="relative py-16 bg-muted/30 text-center overflow-hidden">
+          <img 
+            src="/voluntariado.png" 
+            alt="Fondo de voluntariado" 
+            className="absolute inset-0 w-full h-full object-cover opacity-20 dark:opacity-10" 
+          />
+          <div className="relative z-10 container mx-auto px-4">
             <h1 className="text-4xl font-bold text-primary mb-8">Cómo Puedes Ayudar</h1>
             <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
               Tu apoyo es fundamental para que Ellas en Movimiento, A.C. pueda seguir transformando vidas. Hay muchas maneras de contribuir a nuestra causa.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="p-6 shadow-lg">
+              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
                 <CardHeader className="flex flex-col items-center">
                   <DollarSign className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2">Haz una Donación</CardTitle>
@@ -41,7 +46,7 @@ const HowToHelpPage = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-6 shadow-lg">
+              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
                 <CardHeader className="flex flex-col items-center">
                   <HandHeart className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2">Sé Voluntario</CardTitle>
@@ -56,7 +61,7 @@ const HowToHelpPage = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-6 shadow-lg">
+              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
                 <CardHeader className="flex flex-col items-center">
                   <Users className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2">Difunde Nuestra Causa</CardTitle>
