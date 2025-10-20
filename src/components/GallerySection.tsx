@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const images = [
   { src: '/IMG-20251015-WA0013.jpg', alt: 'Mujeres en un taller de empoderamiento' },
@@ -17,13 +22,20 @@ const GallerySection = () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {images.map((image, index) => (
-            <div key={index} className="overflow-hidden rounded-lg shadow-lg group">
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-            </div>
+            <Dialog key={index}>
+              <DialogTrigger asChild>
+                <div className="overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-[80vw] p-0 border-0">
+                <img src={image.src} alt={image.alt} className="w-full h-auto rounded-lg" />
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
       </div>
