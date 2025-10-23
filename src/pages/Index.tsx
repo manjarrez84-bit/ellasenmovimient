@@ -10,6 +10,7 @@ import CallToActionSection from '@/components/CallToActionSection';
 import ContactSection from '@/components/ContactSection';
 import AnimatedSection from '@/components/AnimatedSection';
 import GallerySection from '@/components/GallerySection';
+import LatestBlogPostsSection from '@/components/LatestBlogPostsSection'; // Import the new component
 
 const Index = () => {
   return (
@@ -25,6 +26,9 @@ const Index = () => {
         </AnimatedSection>
         <AnimatedSection>
           <TestimonialsSection />
+        </AnimatedSection>
+        <AnimatedSection>
+          <LatestBlogPostsSection /> {/* Add the new section here */}
         </AnimatedSection>
         <AnimatedSection>
           <GallerySection />
