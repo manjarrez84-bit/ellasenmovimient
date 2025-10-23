@@ -45,7 +45,8 @@ const ForumPage = () => {
     });
 
     return () => {
-      authListener?.unsubscribe();
+      // Corrected: authListener is already the object with unsubscribe
+      authListener.unsubscribe();
     };
   }, [handleAuthChange]);
 

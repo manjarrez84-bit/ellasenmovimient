@@ -43,7 +43,8 @@ const Header = () => {
     });
 
     return () => {
-      authListener?.unsubscribe();
+      // Corrected: authListener is already the object with unsubscribe
+      authListener.unsubscribe(); 
     };
   }, []);
 
