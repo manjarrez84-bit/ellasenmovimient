@@ -11,6 +11,7 @@ const navItems = [
   { href: '/about', label: 'Nosotras' },
   { href: '/programs', label: 'Programas' },
   { href: '/blog', label: 'Blog' },
+  { href: '/forum', label: 'Foro' }, {/* Added Forum link */}
   { href: '/how-to-help', label: 'Cómo Ayudar' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contacto' },
