@@ -14,7 +14,8 @@ import VolunteerPage from "./pages/VolunteerPage";
 import FAQPage from "./pages/FAQPage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
-import ForumPage from "./pages/ForumPage"; // Import the new ForumPage
+import ForumPage from "./pages/ForumPage";
+import CreateBlogPostPage from "./pages/admin/CreateBlogPostPage"; // Import the new admin page
 import { ThemeProvider } from "./components/theme-provider";
 
 const queryClient = new QueryClient();
@@ -37,7 +38,8 @@ const App = () => (
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:id" element={<BlogPostPage />} />
-            <Route path="/forum" element={<ForumPage />} /> {/* Add the new ForumPage route */}
+            <Route path="/forum" element={<ForumPage />} />
+            <Route path="/admin/blog/new" element={<CreateBlogPostPage />} /> {/* Add the new admin route */}
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -33,3 +33,27 @@ export const getPostById = async (id: string): Promise<BlogPost | null> => {
 
   return data as BlogPost | null;
 };
+
+export const createBlogPost = async (post: Omit<BlogPost, 'id' | 'date'>, userId: string): Promise<BlogPost> => {
+  const { data, error } = await supabase
+    .from('blog_posts')
+    .insert([
+      { 
+        title: post.title, 
+        author: post.author, 
+        summary: post.summary, 
+        image_url: post.image_url, 
+        content: post.content,
+        user_id: userId, // Asociar el post al usuario que lo crea
+      }
+    ])
+    .select()
+    .single();
+
+  if (error) {
+    console.error('Error creating blog post:', error);
+    throw new Error('No se pudo crear la publicación del blog.');
+  }
+
+  return data as BlogPost;
+};

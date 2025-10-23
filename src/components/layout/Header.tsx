@@ -5,6 +5,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/s
 import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '../theme-toggle';
+import { getCurrentUser, onAuthStateChange } from '@/services/forumService'; // Import auth services
 
 const navItems = [
   { href: '/', label: 'Inicio' },
@@ -19,6 +20,7 @@ const navItems = [
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [user, setUser] = useState<any | null>(null); // State to hold user info
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +28,23 @@ const Header = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Effect to check user authentication status
+  useEffect(() => {
+    const checkUser = async () => {
+      const currentUser = await getCurrentUser();
+      setUser(currentUser);
+    };
+
+    checkUser(); // Initial check
+    const { data: authListener } = onAuthStateChange((event, session) => {
+      setUser(session?.user || null);
+    });
+
+    return () => {
+      authListener?.unsubscribe();
+    };
   }, []);
 
   const linkClasses = "font-bold text-foreground hover:text-muted-foreground";
@@ -50,6 +69,11 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
+          {user && ( // Show "Crear Post" link only if user is logged in
+            <Link to="/admin/blog/new" className={linkClasses}>
+              Crear Post
+            </Link>
+          )}
           <ThemeToggle />
           <Link to="/donate">
             <Button>Donar</Button>
@@ -72,6 +96,11 @@ const Header = () => {
                     <Link to={item.href}>{item.label}</Link>
                   </SheetClose>
                 ))}
+                {user && ( // Show "Crear Post" link only if user is logged in
+                  <SheetClose asChild>
+                    <Link to="/admin/blog/new">Crear Post</Link>
+                  </SheetClose>
+                )}
                 <SheetClose asChild>
                   <Link to="/donate">
                     <Button className="w-full">Donar</Button>
