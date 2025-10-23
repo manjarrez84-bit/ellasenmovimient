@@ -26,13 +26,12 @@ const CreateBlogPostPage = () => {
 
   useEffect(() => {
     checkUser();
-    const { data: authListener } = onAuthStateChange((event, session) => {
+    const { data: { subscription } } = onAuthStateChange((event, session) => {
       checkUser();
     });
 
     return () => {
-      // Corrected: authListener is already the object with unsubscribe
-      authListener.unsubscribe();
+      subscription.unsubscribe();
     };
   }, [checkUser]);
 

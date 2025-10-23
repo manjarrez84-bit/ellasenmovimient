@@ -38,13 +38,12 @@ const Header = () => {
     };
 
     checkUser(); // Initial check
-    const { data: authListener } = onAuthStateChange((event, session) => {
+    const { data: { subscription } } = onAuthStateChange((event, session) => {
       setUser(session?.user || null);
     });
 
     return () => {
-      // Corrected: authListener is already the object with unsubscribe
-      authListener.unsubscribe(); 
+      subscription.unsubscribe(); 
     };
   }, []);
 

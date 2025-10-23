@@ -40,13 +40,12 @@ const ForumPage = () => {
 
   useEffect(() => {
     handleAuthChange(); // Initial check
-    const { data: authListener } = onAuthStateChange((event, session) => {
+    const { data: { subscription } } = onAuthStateChange((event, session) => {
       handleAuthChange();
     });
 
     return () => {
-      // Corrected: authListener is already the object with unsubscribe
-      authListener.unsubscribe();
+      subscription.unsubscribe();
     };
   }, [handleAuthChange]);
 
