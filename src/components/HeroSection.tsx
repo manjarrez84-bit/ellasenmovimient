@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section 
       className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-center"
       style={{ 
-        backgroundImage: "url('/inicio.jpg')", // Cambiado a inicio.jpg
+        backgroundImage: "url('/inicio.jpg')",
         backgroundSize: "120%",
       }}
     >
@@ -18,7 +18,7 @@ const HeroSection = () => {
 
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance">
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance">
           ELLAS CAMBIAN TODO LO QUE TOCAN, TODO LO QUE TOCAN CAMBIAN
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl drop-shadow-lg font-medium text-balance">
