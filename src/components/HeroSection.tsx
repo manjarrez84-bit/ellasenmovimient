@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-center" // Cambiado a bg-center para mejor enfoque
+      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-center"
       style={{ 
-        backgroundImage: "url('/fondo.png')",
-        backgroundSize: "120%", // Aplicando zoom a la imagen
+        backgroundImage: "url('/inicio.jpg')", // Cambiado a inicio.jpg
+        backgroundSize: "120%",
       }}
     >
       {/* Overlay oscuro para legibilidad */}
