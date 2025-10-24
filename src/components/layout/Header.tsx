@@ -57,7 +57,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img src="/logo.jpg" alt="Ellas en Movimiento A.C. Logo" className="h-10 w-auto" />
-          <span className="text-2xl font-bold text-foreground">
+          <span className="text-2xl font-bold text-foreground text-balance">
             Ellas en Movimiento
           </span>
         </Link>
