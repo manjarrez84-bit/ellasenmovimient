@@ -64,7 +64,7 @@ const BlogPostPage = () => {
         <main className="flex-grow flex items-center justify-center text-center">
           <div>
             <h1 className="text-4xl font-bold text-primary mb-4">Publicación no encontrada</h1>
-            <p className="text-lg text-muted-foreground mb-8">Lo sentimos, no pudimos encontrar el artículo que estás buscando.</p>
+            <p className="text-lg text-foreground mb-8">Lo sentimos, no pudimos encontrar el artículo que estás buscando.</p>
             <Link to="/blog">
               <Button>Volver al Blog</Button>
             </Link>
@@ -89,11 +89,11 @@ const BlogPostPage = () => {
               </Link>
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold text-primary mb-4">{post.title}</h1>
-            <p className="text-md text-muted-foreground mb-8">{new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })} por {post.author}</p>
+            <p className="text-md text-foreground mb-8">{new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })} por {post.author}</p>
             
             <img src={post.image_url} alt={post.title} className="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-lg mb-8" />
 
-            <div className="prose lg:prose-xl max-w-none dark:prose-invert text-muted-foreground">
+            <div className="prose lg:prose-xl max-w-none dark:prose-invert text-foreground">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {post.content}
               </ReactMarkdown>

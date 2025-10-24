@@ -59,7 +59,7 @@ const DonationForm = () => {
       <div className="text-center p-6 bg-muted/50 rounded-lg">
         <Heart className="mx-auto h-12 w-12 text-primary mb-4" />
         <h3 className="text-2xl font-bold text-primary mb-2">¡Muchas Gracias por tu Apoyo!</h3>
-        <p className="text-muted-foreground mb-4">
+        <p className="text-foreground mb-4">
           Hemos registrado tu intención de donar ${finalAmount.toFixed(2)} MXN. Para completar tu donación, por favor, realiza una transferencia a la siguiente cuenta:
         </p>
         <div className="text-left bg-background p-4 rounded-md">

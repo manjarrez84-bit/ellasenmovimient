@@ -14,7 +14,7 @@ const ContactPage = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold text-primary mb-8">Envíanos un Mensaje</h2>
-            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
               Si tienes alguna pregunta, sugerencia o deseas más información, por favor, completa el siguiente formulario.
             </p>
 

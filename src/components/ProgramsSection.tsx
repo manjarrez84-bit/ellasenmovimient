@@ -30,7 +30,7 @@ const ProgramsSection = () => {
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-primary mb-12">Nuestros Programas</h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
           Trabajamos en diversas áreas para ofrecer un apoyo integral a las mujeres, adaptándonos a sus necesidades específicas.
         </p>
 
@@ -41,7 +41,7 @@ const ProgramsSection = () => {
                 {program.icon}
                 <CardTitle className="text-xl font-semibold mb-2">{program.title}</CardTitle>
               </CardHeader>
-              <CardContent className="text-muted-foreground">
+              <CardContent className="text-foreground">
                 {program.description}
               </CardContent>
             </Card>

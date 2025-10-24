@@ -44,7 +44,7 @@ const FAQPage = () => {
         <section className="py-24 bg-muted/30">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold text-primary mb-8">Preguntas Frecuentes</h1>
-            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
               Aquí encontrarás respuestas a las dudas más comunes sobre nuestro trabajo y cómo puedes involucrarte.
             </p>
 
@@ -53,7 +53,7 @@ const FAQPage = () => {
                 {faqs.map((faq, index) => (
                   <AccordionItem value={`item-${index}`} key={index}>
                     <AccordionTrigger className="text-lg font-semibold">{faq.question}</AccordionTrigger>
-                    <AccordionContent className="text-base text-muted-foreground">
+                    <AccordionContent className="text-base text-foreground">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>

@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-primary mb-12">Historias de Impacto</h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
           Escucha las voces de algunas de las mujeres a las que hemos tenido el privilegio de apoyar.
         </p>
 
@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
                 <Quote className="h-8 w-8 text-primary" />
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
+                <p className="text-foreground italic">"{testimonial.quote}"</p>
               </CardContent>
               <CardFooter>
                 <p className="font-semibold text-primary">- {testimonial.name}</p>

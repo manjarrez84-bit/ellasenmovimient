@@ -26,7 +26,7 @@ const HowToHelpPage = () => {
           />
           <div className="relative z-10 container mx-auto px-4">
             <h1 className="text-4xl font-bold text-primary mb-8">Cómo Puedes Ayudar</h1>
-            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
               Tu apoyo es fundamental para que Ellas en Movimiento, A.C. pueda seguir transformando vidas. Hay muchas maneras de contribuir a nuestra causa.
             </p>
 
@@ -36,7 +36,7 @@ const HowToHelpPage = () => {
                   <DollarSign className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2">Haz una Donación</CardTitle>
                 </CardHeader>
-                <CardContent className="text-muted-foreground">
+                <CardContent className="text-foreground">
                   Cada contribución económica nos permite mantener nuestros programas y llegar a más mujeres. Tu generosidad hace una diferencia real.
                   <div className="mt-6">
                     <Link to="/donate">
@@ -51,7 +51,7 @@ const HowToHelpPage = () => {
                   <HandHeart className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2">Sé Voluntario</CardTitle>
                 </CardHeader>
-                <CardContent className="text-muted-foreground">
+                <CardContent className="text-foreground">
                   Ofrece tu tiempo y tus habilidades para apoyar en nuestros talleres, eventos o en la gestión diaria de la asociación.
                   <div className="mt-6">
                     <Link to="/volunteer">
@@ -66,7 +66,7 @@ const HowToHelpPage = () => {
                   <Users className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2">Difunde Nuestra Causa</CardTitle>
                 </CardHeader>
-                <CardContent className="text-muted-foreground">
+                <CardContent className="text-foreground">
                   Ayúdanos a crear conciencia sobre la violencia de género y la importancia de empoderar a las mujeres compartiendo nuestro mensaje.
                   <div className="mt-6 flex justify-center space-x-4">
                     <a href={facebookShareUrl} target="_blank" rel="noopener noreferrer" aria-label="Compartir en Facebook">

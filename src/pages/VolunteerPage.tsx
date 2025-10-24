@@ -13,7 +13,7 @@ const VolunteerPage = () => {
         <section className="py-16 bg-background text-center">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold text-primary mb-8">Sé Parte de Nuestro Equipo de Voluntarios</h1>
-            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
               Tu tiempo y talento son invaluables. Únete a Ellas en Movimiento, A.C. y ayúdanos a construir un futuro mejor para las mujeres.
             </p>
 

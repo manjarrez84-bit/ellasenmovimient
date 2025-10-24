@@ -17,7 +17,7 @@ const GallerySection = () => {
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-primary mb-4">Nuestra Galería</h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
           Un vistazo a los momentos que definen nuestro trabajo y el impacto que logramos juntas.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

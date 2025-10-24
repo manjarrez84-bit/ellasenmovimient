@@ -7,7 +7,7 @@ const ContactSection = () => {
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-primary mb-12">Contáctanos</h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
           Estamos aquí para escucharte y ayudarte. No dudes en ponerte en contacto con nosotras.
         </p>
 
@@ -17,7 +17,7 @@ const ContactSection = () => {
               <MapPin className="text-primary mb-4" size={40} />
               <CardTitle className="text-xl font-semibold mb-2">Dirección</CardTitle>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
+            <CardContent className="text-foreground">
               Porfirio Díaz 426 Nte. Col. Centro, Monterrey, Nuevo León, México.
             </CardContent>
           </Card>
@@ -27,7 +27,7 @@ const ContactSection = () => {
               <Phone className="text-primary mb-4" size={40} />
               <CardTitle className="text-xl font-semibold mb-2">Teléfono</CardTitle>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
+            <CardContent className="text-foreground">
               <p className="font-bold mb-2">+52 8112664221</p>
               <p className="font-bold mb-2">+52 8183641257</p>
               <p className="font-bold">+52 8137142927</p>
@@ -39,7 +39,7 @@ const ContactSection = () => {
               <Mail className="text-primary mb-4" size={40} />
               <CardTitle className="text-xl font-semibold mb-2">Correo Electrónico</CardTitle>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
+            <CardContent className="text-foreground">
               ellasenmov@gmail.com
             </CardContent>
           </Card>
@@ -50,7 +50,7 @@ const ContactSection = () => {
                 <MessageCircle className="text-primary mb-4" size={40} />
                 <CardTitle className="text-xl font-semibold mb-2">WhatsApp</CardTitle>
               </CardHeader>
-              <CardContent className="text-muted-foreground">
+              <CardContent className="text-foreground">
                 Envíanos un mensaje directo para una atención más rápida.
               </CardContent>
             </Card>

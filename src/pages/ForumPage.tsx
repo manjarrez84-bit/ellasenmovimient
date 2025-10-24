@@ -78,7 +78,7 @@ const ForumPage = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-primary mb-4">Foro de la Comunidad</h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-foreground max-w-3xl mx-auto">
               Un espacio para compartir ideas, hacer preguntas y conectar con nuestra comunidad.
             </p>
           </div>
@@ -100,7 +100,7 @@ const ForumPage = () => {
               </div>
             ) : (
               <div className="flex flex-col items-center space-y-4">
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-foreground">
                   Inicia sesión o regístrate para participar en el foro.
                 </p>
                 <AuthForm onAuthSuccess={handleAuthChange} />
@@ -116,7 +116,7 @@ const ForumPage = () => {
                 <ForumPostCard key={post.id} post={post} />
               ))
             ) : (
-              <p className="text-center text-muted-foreground">No hay publicaciones en el foro todavía. ¡Sé el primero en publicar!</p>
+              <p className="text-center text-foreground">No hay publicaciones en el foro todavía. ¡Sé el primero en publicar!</p>
             )}
           </div>
         </div>

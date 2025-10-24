@@ -51,7 +51,7 @@ const CreateBlogPostPage = () => {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow flex items-center justify-center py-24 bg-muted/30">
-          <p className="text-lg text-muted-foreground">Cargando...</p>
+          <p className="text-lg text-foreground">Cargando...</p>
         </main>
         <Footer />
         <MadeWithDyad />
@@ -66,7 +66,7 @@ const CreateBlogPostPage = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-primary mb-4">Administración de Blog</h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-foreground max-w-3xl mx-auto">
               Crea nuevas publicaciones para el blog de la comunidad.
             </p>
           </div>
@@ -87,7 +87,7 @@ const CreateBlogPostPage = () => {
             </div>
           ) : (
             <div className="flex flex-col items-center space-y-4">
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-foreground">
                 Inicia sesión para crear nuevas publicaciones de blog.
               </p>
               <AuthForm onAuthSuccess={checkUser} />

@@ -49,7 +49,7 @@ const LatestBlogPostsSection = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-primary mb-4">Últimas Noticias</h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
           Mantente informada con nuestras publicaciones más recientes.
         </p>
 

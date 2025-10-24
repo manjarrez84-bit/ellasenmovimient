@@ -39,7 +39,7 @@ const DonationImpact = () => {
             </CardHeader>
             <CardContent>
               <p className="text-2xl font-bold text-primary mb-2">{item.amount}</p>
-              <p className="text-muted-foreground">{item.description}</p>
+              <p className="text-foreground">{item.description}</p>
             </CardContent>
           </Card>
         ))}

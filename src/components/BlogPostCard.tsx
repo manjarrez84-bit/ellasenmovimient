@@ -15,10 +15,10 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({ post }) => {
       <img src={post.image_url} alt={post.title} className="w-full h-48 object-cover" />
       <CardHeader>
         <CardTitle className="text-xl font-bold text-primary">{post.title}</CardTitle>
-        <p className="text-sm text-muted-foreground">{new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })} por {post.author}</p>
+        <p className="text-sm text-foreground">{new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })} por {post.author}</p>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-muted-foreground">{post.summary}</p>
+        <p className="text-foreground">{post.summary}</p>
       </CardContent>
       <CardFooter>
         <Link to={`/blog/${post.id}`} className="w-full">

@@ -14,7 +14,7 @@ const DonatePage = () => {
         <section className="py-16 bg-muted/30 text-center">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold text-primary mb-8">Haz tu Donación</h1>
-            <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
               Tu generosidad es la fuerza que impulsa nuestros programas. Cada donación, grande o pequeña, nos ayuda a brindar apoyo vital a mujeres en situación de vulnerabilidad.
             </p>
 
