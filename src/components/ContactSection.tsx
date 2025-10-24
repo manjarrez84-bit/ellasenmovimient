@@ -6,8 +6,8 @@ const ContactSection = () => {
   return (
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-primary mb-12">Contáctanos</h2>
-        <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
+        <h2 className="text-4xl font-bold text-primary mb-12 text-balance">Contáctanos</h2>
+        <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto text-balance">
           Estamos aquí para escucharte y ayudarte. No dudes en ponerte en contacto con nosotras.
         </p>
 
@@ -15,9 +15,9 @@ const ContactSection = () => {
           <Card className="p-6 shadow-lg">
             <CardHeader className="flex flex-col items-center">
               <MapPin className="text-primary mb-4" size={40} />
-              <CardTitle className="text-xl font-semibold mb-2">Dirección</CardTitle>
+              <CardTitle className="text-xl font-semibold mb-2 text-balance">Dirección</CardTitle>
             </CardHeader>
-            <CardContent className="text-foreground">
+            <CardContent className="text-foreground text-balance">
               Porfirio Díaz 426 Nte. Col. Centro, Monterrey, Nuevo León, México.
             </CardContent>
           </Card>
@@ -25,9 +25,9 @@ const ContactSection = () => {
           <Card className="p-6 shadow-lg">
             <CardHeader className="flex flex-col items-center">
               <Phone className="text-primary mb-4" size={40} />
-              <CardTitle className="text-xl font-semibold mb-2">Teléfono</CardTitle>
+              <CardTitle className="text-xl font-semibold mb-2 text-balance">Teléfono</CardTitle>
             </CardHeader>
-            <CardContent className="text-foreground">
+            <CardContent className="text-foreground text-balance">
               <p className="font-bold mb-2">+52 8112664221</p>
               <p className="font-bold mb-2">+52 8183641257</p>
               <p className="font-bold">+52 8137142927</p>
@@ -37,9 +37,9 @@ const ContactSection = () => {
           <Card className="p-6 shadow-lg">
             <CardHeader className="flex flex-col items-center">
               <Mail className="text-primary mb-4" size={40} />
-              <CardTitle className="text-xl font-semibold mb-2">Correo Electrónico</CardTitle>
+              <CardTitle className="text-xl font-semibold mb-2 text-balance">Correo Electrónico</CardTitle>
             </CardHeader>
-            <CardContent className="text-foreground">
+            <CardContent className="text-foreground text-balance">
               ellasenmov@gmail.com
             </CardContent>
           </Card>
@@ -48,9 +48,9 @@ const ContactSection = () => {
             <Card className="p-6 shadow-lg h-full transition-transform transform hover:scale-105">
               <CardHeader className="flex flex-col items-center">
                 <MessageCircle className="text-primary mb-4" size={40} />
-                <CardTitle className="text-xl font-semibold mb-2">WhatsApp</CardTitle>
+                <CardTitle className="text-xl font-semibold mb-2 text-balance">WhatsApp</CardTitle>
               </CardHeader>
-              <CardContent className="text-foreground">
+              <CardContent className="text-foreground text-balance">
                 Envíanos un mensaje directo para una atención más rápida.
               </CardContent>
             </Card>

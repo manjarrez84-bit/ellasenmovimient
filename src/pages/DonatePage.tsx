@@ -13,8 +13,8 @@ const DonatePage = () => {
       <main className="flex-grow">
         <section className="py-16 bg-muted/30 text-center">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-primary mb-8">Haz tu Donación</h1>
-            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
+            <h1 className="text-4xl font-bold text-primary mb-8 text-balance">Haz tu Donación</h1>
+            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto text-balance">
               Tu generosidad es la fuerza que impulsa nuestros programas. Cada donación, grande o pequeña, nos ayuda a brindar apoyo vital a mujeres en situación de vulnerabilidad.
             </p>
 
@@ -23,7 +23,7 @@ const DonatePage = () => {
             <div className="max-w-2xl mx-auto bg-card p-8 rounded-lg shadow-lg">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl font-semibold text-primary">Elige tu Contribución</CardTitle>
+                  <CardTitle className="text-2xl font-semibold text-primary text-balance">Elige tu Contribución</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <DonationForm />

@@ -7,8 +7,8 @@ const AboutSection = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">Nosotras</h2>
-          <p className="text-lg text-foreground max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-primary mb-4 text-balance">Nosotras</h2>
+          <p className="text-lg text-foreground max-w-3xl mx-auto text-balance">
             Ellas en Movimiento, A.C. es una asociación sin fines de lucro dedicada a empoderar a mujeres que enfrentan violencia y pobreza, brindándoles herramientas y apoyo para transformar sus vidas.
           </p>
         </div>
@@ -28,7 +28,7 @@ const AboutSection = () => {
               <TabsContent value="mission" className="p-6 bg-muted/50 rounded-b-lg">
                 <div className="flex items-start space-x-4">
                   <Goal className="text-primary mt-1" size={24} />
-                  <p className="text-foreground">
+                  <p className="text-foreground text-balance">
                     Contribuir a elevar la calidad de vida de las personas de escasos recursos en especial de niñas y mujeres mexicanas, buscando su participación igualitaria en la sociedad. Ofreciéndoles de manera eficiente y sostenible servicios y productos que contribuyan a su desarrollo integral.
                   </p>
                 </div>
@@ -36,7 +36,7 @@ const AboutSection = () => {
               <TabsContent value="vision" className="p-6 bg-muted/50 rounded-b-lg">
                 <div className="flex items-start space-x-4">
                   <Lightbulb className="text-primary mt-1" size={24} />
-                  <p className="text-foreground">
+                  <p className="text-foreground text-balance">
                     Ser una fuerza transformadora y generadora de respuestas para un avance significativo en el desarrollo integral de Ellas habiendo logrado su empoderamiento.
                   </p>
                 </div>
@@ -44,7 +44,7 @@ const AboutSection = () => {
               <TabsContent value="values" className="p-6 bg-muted/50 rounded-b-lg">
                 <div className="flex items-start space-x-4">
                   <Heart className="text-primary mt-1" size={24} />
-                  <p className="text-foreground">
+                  <p className="text-foreground text-balance">
                     Dignidad. Sororidad y solidaridad. Empoderamiento femenino. Equidad. Libertad.
                   </p>
                 </div>

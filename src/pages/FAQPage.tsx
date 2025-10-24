@@ -43,8 +43,8 @@ const FAQPage = () => {
       <main className="flex-grow">
         <section className="py-24 bg-muted/30">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold text-primary mb-8">Preguntas Frecuentes</h1>
-            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
+            <h1 className="text-4xl font-bold text-primary mb-8 text-balance">Preguntas Frecuentes</h1>
+            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto text-balance">
               Aquí encontrarás respuestas a las dudas más comunes sobre nuestro trabajo y cómo puedes involucrarte.
             </p>
 
@@ -52,8 +52,8 @@ const FAQPage = () => {
               <Accordion type="single" collapsible className="w-full">
                 {faqs.map((faq, index) => (
                   <AccordionItem value={`item-${index}`} key={index}>
-                    <AccordionTrigger className="text-lg font-semibold">{faq.question}</AccordionTrigger>
-                    <AccordionContent className="text-base text-foreground">
+                    <AccordionTrigger className="text-lg font-semibold text-balance">{faq.question}</AccordionTrigger>
+                    <AccordionContent className="text-base text-foreground text-balance">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>

@@ -25,8 +25,8 @@ const HowToHelpPage = () => {
             className="absolute inset-0 w-full h-full object-cover opacity-20 dark:opacity-10" 
           />
           <div className="relative z-10 container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-primary mb-8">Cómo Puedes Ayudar</h1>
-            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto">
+            <h1 className="text-4xl font-bold text-primary mb-8 text-balance">Cómo Puedes Ayudar</h1>
+            <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto text-balance">
               Tu apoyo es fundamental para que Ellas en Movimiento, A.C. pueda seguir transformando vidas. Hay muchas maneras de contribuir a nuestra causa.
             </p>
 
@@ -34,9 +34,9 @@ const HowToHelpPage = () => {
               <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
                 <CardHeader className="flex flex-col items-center">
                   <DollarSign className="text-primary mb-4" size={40} />
-                  <CardTitle className="text-2xl font-semibold mb-2">Haz una Donación</CardTitle>
+                  <CardTitle className="text-2xl font-semibold mb-2 text-balance">Haz una Donación</CardTitle>
                 </CardHeader>
-                <CardContent className="text-foreground">
+                <CardContent className="text-foreground text-balance">
                   Cada contribución económica nos permite mantener nuestros programas y llegar a más mujeres. Tu generosidad hace una diferencia real.
                   <div className="mt-6">
                     <Link to="/donate">
@@ -49,9 +49,9 @@ const HowToHelpPage = () => {
               <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
                 <CardHeader className="flex flex-col items-center">
                   <HandHeart className="text-primary mb-4" size={40} />
-                  <CardTitle className="text-2xl font-semibold mb-2">Sé Voluntario</CardTitle>
+                  <CardTitle className="text-2xl font-semibold mb-2 text-balance">Sé Voluntario</CardTitle>
                 </CardHeader>
-                <CardContent className="text-foreground">
+                <CardContent className="text-foreground text-balance">
                   Ofrece tu tiempo y tus habilidades para apoyar en nuestros talleres, eventos o en la gestión diaria de la asociación.
                   <div className="mt-6">
                     <Link to="/volunteer">
@@ -64,9 +64,9 @@ const HowToHelpPage = () => {
               <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
                 <CardHeader className="flex flex-col items-center">
                   <Users className="text-primary mb-4" size={40} />
-                  <CardTitle className="text-2xl font-semibold mb-2">Difunde Nuestra Causa</CardTitle>
+                  <CardTitle className="text-2xl font-semibold mb-2 text-balance">Difunde Nuestra Causa</CardTitle>
                 </CardHeader>
-                <CardContent className="text-foreground">
+                <CardContent className="text-foreground text-balance">
                   Ayúdanos a crear conciencia sobre la violencia de género y la importancia de empoderar a las mujeres compartiendo nuestro mensaje.
                   <div className="mt-6 flex justify-center space-x-4">
                     <a href={facebookShareUrl} target="_blank" rel="noopener noreferrer" aria-label="Compartir en Facebook">
