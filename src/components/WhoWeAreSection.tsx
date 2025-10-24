@@ -14,6 +14,19 @@ const WhoWeAreSection = () => {
             <p className="text-balance">
               En Ellas en Movimiento A.C. trabajamos principalmente con mujeres, niñas, niños y adolescentes que habitan en contextos de vulnerabilidad social dentro del estado de Nuevo León, especialmente en zonas urbanas marginadas de Monterrey, como el polígono de pobreza No. 66. Estos grupos enfrentan múltiples carencias que afectan su bienestar, su participación en la vida pública y sus oportunidades de desarrollo.
             </p>
+            <p className="text-balance">
+              Nuestra visión es ser una fuerza transformadora y generadora de respuestas para un avance 
+              significativo en el desarrollo integral de Ellas habiendo logrado su empoderamiento. 
+            </p>
+            <p className="text-balance">
+              Trabajamos en alianza con organizaciones, instituciones académicas, sector público y empresas socialmente responsables, para sumar esfuerzos locales a una agenda global, alineando nuestros programas a los Objetivos de Desarrollo Sostenible 2030.
+            </p>
+            <p className="text-balance">
+              Nuestra intervención se enfoca en Ellas porque históricamente han sido excluidas de los espacios donde se toman decisiones y viven situaciones que comprometen su salud, seguridad y acceso a derechos fundamentales.
+            </p>
+            <p className="text-balance">
+              En este contexto, brindar atención integral a estos grupos prioritarios no es solo urgente, sino también esencial para generar condiciones de equidad y justicia social. Al trabajar desde un enfoque comunitario, con programas de empoderamiento, cultura ecológica y educación ambiental, primera infancia y fortalecimiento emocional, oportunidades productivas para Ellas buscamos romper con las barreras estructurales que impiden el ejercicio pleno de sus derechos y su capacidad para transformar sus realidades.
+            </p>
           </CardContent>
         </Card>
       </div>
