@@ -11,14 +11,14 @@ interface BlogPostCardProps {
 
 const BlogPostCard: React.FC<BlogPostCardProps> = ({ post }) => {
   return (
-    <Card className="flex flex-col overflow-hidden transition-shadow hover:shadow-xl">
+    <Card className="flex flex-col overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
       <img src={post.image_url} alt={post.title} className="w-full h-48 object-cover" />
       <CardHeader>
-        <CardTitle className="text-xl font-bold text-primary">{post.title}</CardTitle>
-        <p className="text-sm text-foreground">{new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })} por {post.author}</p>
+        <CardTitle className="text-xl font-bold text-primary text-balance">{post.title}</CardTitle>
+        <p className="text-sm text-foreground text-balance">{new Date(post.date).toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })} por {post.author}</p>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-foreground">{post.summary}</p>
+        <p className="text-foreground text-balance">{post.summary}</p>
       </CardContent>
       <CardFooter>
         <Link to={`/blog/${post.id}`} className="w-full">

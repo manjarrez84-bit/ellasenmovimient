@@ -31,7 +31,7 @@ const HowToHelpPage = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
+              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                 <CardHeader className="flex flex-col items-center">
                   <DollarSign className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2 text-balance">Haz una Donación</CardTitle>
@@ -46,7 +46,7 @@ const HowToHelpPage = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
+              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                 <CardHeader className="flex flex-col items-center">
                   <HandHeart className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2 text-balance">Sé Voluntario</CardTitle>
@@ -61,7 +61,7 @@ const HowToHelpPage = () => {
                 </CardContent>
               </Card>
 
-              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm">
+              <Card className="p-6 shadow-lg bg-background/80 backdrop-blur-sm transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
                 <CardHeader className="flex flex-col items-center">
                   <Users className="text-primary mb-4" size={40} />
                   <CardTitle className="text-2xl font-semibold mb-2 text-balance">Difunde Nuestra Causa</CardTitle>

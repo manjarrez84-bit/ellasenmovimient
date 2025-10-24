@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="flex flex-col justify-between p-6 shadow-lg">
+            <Card key={index} className="flex flex-col justify-between p-6 shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <Quote className="h-8 w-8 text-primary" />
               </CardHeader>

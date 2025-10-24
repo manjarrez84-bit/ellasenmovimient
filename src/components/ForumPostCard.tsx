@@ -17,9 +17,9 @@ const ForumPostCard: React.FC<ForumPostCardProps> = ({ post }) => {
   });
 
   return (
-    <Card className="flex flex-col shadow-lg">
+    <Card className="flex flex-col shadow-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl">
       <CardHeader>
-        <CardTitle className="text-xl font-bold text-primary">{post.title}</CardTitle>
+        <CardTitle className="text-xl font-bold text-primary text-balance">{post.title}</CardTitle>
         <div className="flex items-center text-sm text-foreground mt-1">
           <User className="h-4 w-4 mr-2" />
           <span>{post.author_email}</span>
@@ -28,7 +28,7 @@ const ForumPostCard: React.FC<ForumPostCardProps> = ({ post }) => {
         </div>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-foreground whitespace-pre-wrap">{post.content}</p>
+        <p className="text-foreground whitespace-pre-wrap text-balance">{post.content}</p>
       </CardContent>
     </Card>
   );

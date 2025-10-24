@@ -32,7 +32,7 @@ const ImpactStatsSection = () => {
         <h2 className="text-3xl font-bold text-primary mb-12 text-balance">Nuestro Impacto en Números</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <Card key={index} className="p-6 shadow-lg transition-transform transform hover:scale-105">
+            <Card key={index} className="p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl">
               <CardHeader className="flex flex-col items-center">
                 {stat.icon}
               </CardHeader>

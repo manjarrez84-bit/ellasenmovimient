@@ -12,7 +12,7 @@ const ContactSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          <Card className="p-6 shadow-lg">
+          <Card className="p-6 shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
             <CardHeader className="flex flex-col items-center">
               <MapPin className="text-primary mb-4" size={40} />
               <CardTitle className="text-xl font-semibold mb-2 text-balance">Dirección</CardTitle>
@@ -22,7 +22,7 @@ const ContactSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-6 shadow-lg">
+          <Card className="p-6 shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
             <CardHeader className="flex flex-col items-center">
               <Phone className="text-primary mb-4" size={40} />
               <CardTitle className="text-xl font-semibold mb-2 text-balance">Teléfono</CardTitle>
@@ -34,7 +34,7 @@ const ContactSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="p-6 shadow-lg">
+          <Card className="p-6 shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
             <CardHeader className="flex flex-col items-center">
               <Mail className="text-primary mb-4" size={40} />
               <CardTitle className="text-xl font-semibold mb-2 text-balance">Correo Electrónico</CardTitle>
