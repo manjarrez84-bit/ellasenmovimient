@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[60vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-top"
+      className="relative h-[60vh] flex flex-col items-center justify-center text-center text-white pt-48 bg-cover bg-top"
       style={{ backgroundImage: "url('/fondo.jpg')" }}
     >
       {/* Overlay oscuro para legibilidad */}
@@ -22,8 +22,7 @@ const HeroSection = () => {
         <Link to="/how-to-help">
           <Button 
             size="lg" 
-            variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-primary"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
           >
             Únete a Nuestra Causa
           </Button>
