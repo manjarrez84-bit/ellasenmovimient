@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -6,7 +8,7 @@ const HeroSection = () => {
   return (
     <section 
       className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-top"
-      style={{ backgroundImage: "url('/WhatsApp Image 2025-10-20 at 2.44.25 PM.jpg')" }}
+      style={{ backgroundImage: "url('/fondo.png')" }}
     >
       {/* Overlay oscuro para legibilidad */}
       <div className="absolute inset-0 bg-black/60 z-0"></div>
