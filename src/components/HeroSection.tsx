@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[60vh] flex flex-col items-center justify-center text-center text-white pt-20 bg-cover bg-top"
+      className="relative h-[60vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-top"
       style={{ backgroundImage: "url('/fondo.jpg')" }}
     >
       {/* Overlay oscuro para legibilidad */}
