@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section 
       className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-center"
       style={{ 
-        backgroundImage: "url('/inicio.jpg')", // Solo la imagen de fondo principal
+        backgroundImage: "url('/inicio.png')", // Cambiado a inicio.png
         backgroundSize: "120%", 
         backgroundRepeat: "no-repeat",
       }}
@@ -19,8 +19,7 @@ const HeroSection = () => {
 
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
-        {/* El logo como una imagen separada, encima del título */}
-        <img src="/logo2.png" alt="Logo de Ellas en Movimiento" className="h-24 w-auto mb-4 object-contain" />
+        {/* El logo ha sido eliminado */}
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance font-garamond italic">
           Ellas cambian todo lo que tocan, todo lo que tocan cambian.
         </h1>
