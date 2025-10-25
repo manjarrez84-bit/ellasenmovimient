@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        cursive: ['"Dancing Script"', 'cursive'],
+        cursive: ['"Great Vibes"', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
