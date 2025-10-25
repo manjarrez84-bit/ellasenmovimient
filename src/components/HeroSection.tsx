@@ -18,8 +18,9 @@ const HeroSection = () => {
 
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
+        <img src="/logo.jpg" alt="Logo de Ellas en Movimiento" className="h-24 w-auto mb-4 rounded-full object-contain" />
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance font-garamond italic">
-          ELLAS CAMBIAN TODO LO QUE TOCAN, TODO LO QUE TOCAN CAMBIAN
+          Ellas cambian todo lo que tocan, todo lo que tocan cambian.
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl drop-shadow-lg font-medium text-balance">
           Nuestra causa: Eliminando aquellos obstáculos que no permiten que una mujer sea libre.
