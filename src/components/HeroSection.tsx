@@ -20,7 +20,7 @@ const HeroSection = () => {
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
         {/* El logo como una imagen separada, encima del título */}
-        <img src="/logo.jpg" alt="Logo de Ellas en Movimiento" className="h-24 w-auto mb-4 object-contain opacity-90" />
+        <img src="/logo2.png" alt="Logo de Ellas en Movimiento" className="h-24 w-auto mb-4 object-contain" />
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance font-garamond italic">
           Ellas cambian todo lo que tocan, todo lo que tocan cambian.
         </h1>
