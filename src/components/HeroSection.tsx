@@ -22,7 +22,7 @@ const HeroSection = () => {
           ELLAS CAMBIAN TODO LO QUE TOCAN, TODO LO QUE TOCAN CAMBIAN
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl drop-shadow-lg font-medium text-balance">
-          Brindamos apoyo integral a mujeres en situación de violencia y pobreza, ofreciéndoles las herramientas para construir un futuro digno y libre.
+          Nuestra causa: Eliminando aquellos obstáculos que no permiten que una mujer sea libre.
         </p>
         <Link to="/how-to-help">
           <Button 
