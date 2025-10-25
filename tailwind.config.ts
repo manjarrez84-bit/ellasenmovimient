@@ -19,7 +19,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        cursive: ['"Pacifico"', 'cursive'],
+        cursive: ['"Pacifico"', 'cursive'], // Mantener Pacifico para 'cursive' si se usa en otro lugar
+        garamond: ['"EB Garamond"', 'serif'], // Nueva entrada para Garamond
       },
       colors: {
         border: "hsl(var(--border))",
