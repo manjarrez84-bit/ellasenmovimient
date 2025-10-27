@@ -20,8 +20,6 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Open Sans"', '"Roboto"', 'sans-serif'], // Establecer Open Sans y Roboto como fuentes sans-serif predeterminadas
-        cursive: ['"Pacifico"', 'cursive'],
-        garamond: ['"EB Garamond"', 'serif'], // Mantener Garamond para usos específicos
       },
       colors: {
         border: "hsl(var(--border))",

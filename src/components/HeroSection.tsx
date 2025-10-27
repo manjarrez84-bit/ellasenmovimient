@@ -20,7 +20,7 @@ const HeroSection = () => {
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
         {/* El logo ha sido eliminado */}
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance font-garamond italic">
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance italic">
           Ellas cambian todo lo que tocan, todo lo que tocan cambian.
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl drop-shadow-lg font-medium text-balance">
