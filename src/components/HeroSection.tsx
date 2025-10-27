@@ -15,7 +15,7 @@ const HeroSection = () => {
       }}
     >
       {/* Overlay oscuro para legibilidad */}
-      <div className="absolute inset-0 bg-black/60 z-0"></div>
+      {/* <div className="absolute inset-0 bg-black/60 z-0"></div> */} {/* Eliminado para quitar la opacidad */}
 
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
