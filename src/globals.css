@@ -17,7 +17,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 15% 20%;
 
-    --primary: 320 90% 50%; /* Magenta Intenso */
+    --primary: 320 90% 35%; /* Magenta Intenso más oscuro */
     --primary-foreground: 0 0% 100%; /* Blanco */
 
     --secondary: 240 60% 70%; /* Azul Lavanda */
@@ -34,7 +34,7 @@
 
     --border: 240 20% 85%; /* Borde azul lavanda claro */
     --input: 240 20% 85%;
-    --ring: 320 90% 50%; /* Mismo que primary */
+    --ring: 320 90% 35%; /* Mismo que primary */
 
     --radius: 0.5rem;
   }
@@ -50,7 +50,7 @@
     --popover: 240 15% 15%;
     --popover-foreground: 240 20% 90%;
 
-    --primary: 320 90% 65%; /* Magenta Intenso más brillante para contraste */
+    --primary: 320 90% 50%; /* Magenta Intenso más oscuro para contraste en oscuro */
     --primary-foreground: 0 0% 100%; /* Blanco */
 
     --secondary: 240 60% 80%; /* Azul Lavanda más brillante para contraste */
@@ -67,7 +67,7 @@
 
     --border: 240 15% 30%; /* Borde azul oscuro */
     --input: 240 15% 30%;
-    --ring: 320 90% 65%; /* Mismo que primary */
+    --ring: 320 90% 50%; /* Mismo que primary */
   }
 }
 
