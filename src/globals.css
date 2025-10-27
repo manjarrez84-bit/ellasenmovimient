@@ -7,67 +7,67 @@
 
 @layer base {
   :root {
-    /* Colores inspirados en logo.jpg (tema claro) */
-    --background: 270 10% 98%; /* Blanco muy claro con un toque de morado */
-    --foreground: 270 10% 15%; /* Gris oscuro con un toque de morado */
+    /* Colores: Azul Lavanda y Magenta Intenso (tema claro) */
+    --background: 240 20% 98%; /* Azul lavanda muy claro */
+    --foreground: 240 15% 20%; /* Azul oscuro desaturado para texto */
 
     --card: 0 0% 100%; /* Blanco puro para tarjetas */
-    --card-foreground: 270 10% 15%;
+    --card-foreground: 240 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 270 10% 15%;
+    --popover-foreground: 240 15% 20%;
 
-    --primary: 280 70% 45%; /* Morado principal, rico y vibrante */
+    --primary: 320 90% 50%; /* Magenta Intenso */
     --primary-foreground: 0 0% 100%; /* Blanco */
 
-    --secondary: 330 70% 65%; /* Rosa/Magenta suave y cálido */
+    --secondary: 240 60% 70%; /* Azul Lavanda */
     --secondary-foreground: 0 0% 100%; /* Blanco */
 
-    --muted: 270 10% 92%; /* Gris-morado claro */
-    --muted-foreground: 270 10% 40%; /* Gris-morado medio */
+    --muted: 240 20% 92%; /* Azul lavanda claro y apagado */
+    --muted-foreground: 240 15% 40%; /* Azul medio desaturado */
 
-    --accent: 330 70% 65%; /* Mismo que secondary para acentos */
+    --accent: 240 60% 70%; /* Mismo que secondary para acentos */
     --accent-foreground: 0 0% 100%; /* Blanco */
 
     --destructive: 0 84% 60%; /* Rojo estándar */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 270 10% 85%; /* Borde gris-morado claro */
-    --input: 270 10% 85%;
-    --ring: 280 70% 45%; /* Mismo que primary */
+    --border: 240 20% 85%; /* Borde azul lavanda claro */
+    --input: 240 20% 85%;
+    --ring: 320 90% 50%; /* Mismo que primary */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    /* Colores inspirados en logo.jpg (tema oscuro) */
-    --background: 270 10% 8%; /* Morado-gris muy oscuro */
-    --foreground: 270 10% 90%; /* Blanco roto con un toque de morado */
+    /* Colores: Azul Lavanda y Magenta Intenso (tema oscuro) */
+    --background: 240 15% 10%; /* Azul muy oscuro desaturado */
+    --foreground: 240 20% 90%; /* Azul claro desaturado para texto */
 
-    --card: 270 10% 12%; /* Morado-gris oscuro para tarjetas */
-    --card-foreground: 270 10% 90%;
+    --card: 240 15% 15%; /* Azul oscuro para tarjetas */
+    --card-foreground: 240 20% 90%;
 
-    --popover: 270 10% 12%;
-    --popover-foreground: 270 10% 90%;
+    --popover: 240 15% 15%;
+    --popover-foreground: 240 20% 90%;
 
-    --primary: 280 70% 60%; /* Morado más brillante para contraste en oscuro */
-    --primary-foreground: 0 0% 100%;
+    --primary: 320 90% 65%; /* Magenta Intenso más brillante para contraste */
+    --primary-foreground: 0 0% 100%; /* Blanco */
 
-    --secondary: 330 70% 75%; /* Rosa/Magenta más brillante para contraste en oscuro */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 240 60% 80%; /* Azul Lavanda más brillante para contraste */
+    --secondary-foreground: 0 0% 100%; /* Blanco */
 
-    --muted: 270 10% 20%; /* Gris-morado oscuro */
-    --muted-foreground: 270 10% 60%; /* Gris-morado medio */
+    --muted: 240 15% 25%; /* Azul oscuro apagado */
+    --muted-foreground: 240 20% 60%; /* Azul medio desaturado */
 
-    --accent: 330 70% 75%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 240 60% 80%; /* Mismo que secondary para acentos */
+    --accent-foreground: 0 0% 100%; /* Blanco */
 
-    --destructive: 0 72% 51%;
+    --destructive: 0 72% 51%; /* Rojo estándar */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 270 10% 25%;
-    --input: 270 10% 25%;
-    --ring: 280 70% 60%;
+    --border: 240 15% 30%; /* Borde azul oscuro */
+    --input: 240 15% 30%;
+    --ring: 320 90% 65%; /* Mismo que primary */
   }
 }
 
