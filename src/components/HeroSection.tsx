@@ -9,8 +9,8 @@ const HeroSection = () => {
     <section 
       className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-center"
       style={{ 
-        backgroundImage: "url('/inicio.png')", // Cambiado a inicio.png
-        backgroundSize: "120%", 
+        backgroundImage: "url('/1.png')", // Cambiado a 1.png
+        backgroundSize: "cover", // Ajustado a cover para mejor visualización
         backgroundRepeat: "no-repeat",
       }}
     >
@@ -20,12 +20,12 @@ const HeroSection = () => {
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
         {/* El logo ha sido eliminado */}
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance italic">
+        {/* <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance italic">
           Ellas cambian todo lo que tocan, todo lo que tocan cambian.
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl drop-shadow-lg font-medium text-balance">
           Nuestra causa: Eliminando aquellos obstáculos que no permiten que una mujer sea libre.
-        </p>
+        </p> */}
         <Link to="/how-to-help">
           <Button 
             size="lg" 
