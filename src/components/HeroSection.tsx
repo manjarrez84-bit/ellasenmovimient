@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[50vh] flex flex-col items-center justify-center text-center text-white bg-cover bg-center" // Reducida la altura a h-[50vh] y eliminado pt-32
+      className="relative h-[40vh] flex flex-col items-center justify-center text-center text-white bg-contain bg-no-repeat bg-center container mx-auto" // Altura reducida, bg-contain, bg-no-repeat y container mx-auto
       style={{ 
         backgroundImage: "url('/1.png')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+        // backgroundSize: "cover", // Eliminado, ahora manejado por bg-contain
+        // backgroundRepeat: "no-repeat", // Eliminado, ahora manejado por bg-no-repeat
       }}
     >
       {/* Contenido */}
