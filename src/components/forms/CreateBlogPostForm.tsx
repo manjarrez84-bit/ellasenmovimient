@@ -11,6 +11,7 @@ import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
 import { createBlogPost } from '@/services/blogService';
 import { useNavigate } from 'react-router-dom';
+import { BlogPost } from '@/types'; // Importar BlogPost para usar Omit
 
 const blogPostSchema = z.object({
   title: z.string().min(5, { message: "El título debe tener al menos 5 caracteres." }).max(100, { message: "El título no debe exceder los 100 caracteres." }),
@@ -20,6 +21,7 @@ const blogPostSchema = z.object({
   content: z.string().min(50, { message: "El contenido debe tener al menos 50 caracteres." }),
 });
 
+// Definir el tipo del formulario infiriéndolo directamente del esquema Zod
 type BlogPostFormValues = z.infer<typeof blogPostSchema>;
 
 interface CreateBlogPostFormProps {
@@ -42,7 +44,8 @@ const CreateBlogPostForm: React.FC<CreateBlogPostFormProps> = ({ userId, authorE
 
   const onSubmit = async (values: BlogPostFormValues) => {
     try {
-      await createBlogPost(values, userId);
+      // Aserción de tipo para asegurar que 'values' coincide con el tipo esperado por createBlogPost
+      await createBlogPost(values as Omit<BlogPost, 'id' | 'date'>, userId);
       toast.success("¡Publicación de blog creada con éxito!");
       form.reset({
         title: "",
