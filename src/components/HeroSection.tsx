@@ -7,33 +7,16 @@ import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-[75vh] flex flex-col items-center justify-center text-center text-white pt-32 bg-cover bg-center"
+      className="relative h-[50vh] flex flex-col items-center justify-center text-center text-white bg-cover bg-center" // Reducida la altura a h-[50vh] y eliminado pt-32
       style={{ 
-        backgroundImage: "url('/1.png')", // Cambiado a 1.png
-        backgroundSize: "cover", // Ajustado a cover para mejor visualización
+        backgroundImage: "url('/1.png')",
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Overlay oscuro para legibilidad */}
-      {/* <div className="absolute inset-0 bg-black/60 z-0"></div> */} {/* Eliminado para quitar la opacidad */}
-
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
-        {/* El logo ha sido eliminado */}
-        {/* <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg leading-tight text-balance italic">
-          Ellas cambian todo lo que tocan, todo lo que tocan cambian.
-        </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl drop-shadow-lg font-medium text-balance">
-          Nuestra causa: Eliminando aquellos obstáculos que no permiten que una mujer sea libre.
-        </p> */}
-        <Link to="/how-to-help">
-          <Button 
-            size="lg" 
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
-          >
-            Únete a Nuestra Causa
-          </Button>
-        </Link>
+        {/* El botón "Únete a Nuestra Causa" ha sido eliminado */}
       </div>
     </section>
   );
