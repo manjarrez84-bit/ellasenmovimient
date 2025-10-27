@@ -27,6 +27,9 @@ const WhoWeAreSection = () => {
             <p className="text-balance">
               En este contexto, brindar atención integral a estos grupos prioritarios no es solo urgente, sino también esencial para generar condiciones de equidad y justicia social. Al trabajar desde un enfoque comunitario, con programas de empoderamiento, cultura ecológica y educación ambiental, primera infancia y fortalecimiento emocional, oportunidades productivas para Ellas buscamos romper con las barreras estructurales que impiden el ejercicio pleno de sus derechos y su capacidad para transformar sus realidades.
             </p>
+            <p className="text-balance">
+              Nuestra labor no sustituye al Estado, pero sí complementa esfuerzos públicos con cercanía y pertinencia cultural. Si no se realizan acciones específicas para atender a estas poblaciones, las consecuencias se traducen en una mayor profundización de la desigualdad, reproducción de ciclos intergeneracionales de pobreza, aumento en los niveles de violencia, debilitamiento del tejido social y pérdida de oportunidades para que estas personas construyan un futuro digno y todos compartamos una Casa Común. La falta de atención también conlleva el riesgo de perpetuar la invisibilidad de las mujeres y la normalización de contextos que limitan el desarrollo de la infancia. Por ello, en Ellas en Movimiento A.C. trabajamos con convicción para que las mujeres y sus familias no solo accedan a servicios, sino que también participen activamente en procesos de transformación social y comunitaria. A través de nuestras acciones sostenidas en el tiempo y ancladas en el territorio, buscamos que cada mujer, niña y niño tenga los recursos, el acompañamiento y la confianza necesarios para detonar sus capacidades y avanzar hacia una vida más justa, libre y plena.
+            </p>
           </CardContent>
         </Card>
       </div>
