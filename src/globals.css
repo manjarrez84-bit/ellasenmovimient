@@ -7,65 +7,67 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* White */
-    --foreground: 0 0% 3.9%; /* Black */
+    /* Colores inspirados en logo.jpg (tema claro) */
+    --background: 270 10% 98%; /* Blanco muy claro con un toque de morado */
+    --foreground: 270 10% 15%; /* Gris oscuro con un toque de morado */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card: 0 0% 100%; /* Blanco puro para tarjetas */
+    --card-foreground: 270 10% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --popover-foreground: 270 10% 15%;
 
-    --primary: 259 95% 35%; /* Bolder Purple */
-    --primary-foreground: 0 0% 100%; /* White */
+    --primary: 280 70% 45%; /* Morado principal, rico y vibrante */
+    --primary-foreground: 0 0% 100%; /* Blanco */
 
-    --secondary: 330 90% 60%; /* Vibrant Magenta */
-    --secondary-foreground: 0 0% 100%; /* White */
+    --secondary: 330 70% 65%; /* Rosa/Magenta suave y cálido */
+    --secondary-foreground: 0 0% 100%; /* Blanco */
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --muted: 270 10% 92%; /* Gris-morado claro */
+    --muted-foreground: 270 10% 40%; /* Gris-morado medio */
 
-    --accent: 330 90% 60%; /* Vibrant Magenta */
-    --accent-foreground: 0 0% 100%; /* White */
+    --accent: 330 70% 65%; /* Mismo que secondary para acentos */
+    --accent-foreground: 0 0% 100%; /* Blanco */
 
-    --destructive: 0 84% 60%; /* Standard Red */
+    --destructive: 0 84% 60%; /* Rojo estándar */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 259 95% 35%; /* Bolder Purple */
+    --border: 270 10% 85%; /* Borde gris-morado claro */
+    --input: 270 10% 85%;
+    --ring: 280 70% 45%; /* Mismo que primary */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 259 10% 4%; /* Very Dark Purple */
-    --foreground: 0 0% 98%; /* Near White */
+    /* Colores inspirados en logo.jpg (tema oscuro) */
+    --background: 270 10% 8%; /* Morado-gris muy oscuro */
+    --foreground: 270 10% 90%; /* Blanco roto con un toque de morado */
 
-    --card: 259 10% 4%;
-    --card-foreground: 0 0% 98%;
+    --card: 270 10% 12%; /* Morado-gris oscuro para tarjetas */
+    --card-foreground: 270 10% 90%;
 
-    --popover: 259 10% 4%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 270 10% 12%;
+    --popover-foreground: 270 10% 90%;
 
-    --primary: 259 95% 40%; /* Deep Purple */
-    --primary-foreground: 0 0% 100%; /* White */
+    --primary: 280 70% 60%; /* Morado más brillante para contraste en oscuro */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 330 90% 65%; /* Vibrant Magenta (Dark) */
-    --secondary-foreground: 0 0% 100%; /* White */
+    --secondary: 330 70% 75%; /* Rosa/Magenta más brillante para contraste en oscuro */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 259 10% 15%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted: 270 10% 20%; /* Gris-morado oscuro */
+    --muted-foreground: 270 10% 60%; /* Gris-morado medio */
 
-    --accent: 330 90% 65%; /* Vibrant Magenta (Dark) */
-    --accent-foreground: 0 0% 100%; /* White */
+    --accent: 330 70% 75%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 72% 51%; /* Standard Red (Dark) */
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 259 10% 15%;
-    --input: 259 10% 15%;
-    --ring: 259 95% 40%; /* Deep Purple */
+    --border: 270 10% 25%;
+    --input: 270 10% 25%;
+    --ring: 280 70% 60%;
   }
 }
 
