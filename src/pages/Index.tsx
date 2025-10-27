@@ -5,11 +5,9 @@ import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ProgramsSection from '@/components/ProgramsSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
 import CallToActionSection from '@/components/CallToActionSection';
 import ContactSection from '@/components/ContactSection';
 import AnimatedSection from '@/components/AnimatedSection';
-import GallerySection from '@/components/GallerySection';
 import LatestBlogPostsSection from '@/components/LatestBlogPostsSection'; // Import the new component
 
 const Index = () => {
@@ -24,15 +22,11 @@ const Index = () => {
         <AnimatedSection>
           <ProgramsSection />
         </AnimatedSection>
-        <AnimatedSection>
-          <TestimonialsSection />
-        </AnimatedSection>
+        {/* TestimonialsSection removed */}
         <AnimatedSection>
           <LatestBlogPostsSection /> {/* Add the new section here */}
         </AnimatedSection>
-        <AnimatedSection>
-          <GallerySection />
-        </AnimatedSection>
+        {/* GallerySection removed */}
         <AnimatedSection>
           <CallToActionSection />
         </AnimatedSection>
