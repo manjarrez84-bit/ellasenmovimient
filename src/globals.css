@@ -7,9 +7,9 @@
 
 @layer base {
   :root {
-    /* Colores: Azul Lavanda y Magenta Intenso (tema claro) */
-    --background: 240 20% 98%; /* Azul lavanda muy claro */
-    --foreground: 240 15% 20%; /* Azul oscuro desaturado para texto */
+    /* Colores: Morado/Magenta (#ab07a5), Azul/Púrpura (#615fd2), Blanco (#FFFFFF) */
+    --background: 0 0% 100%; /* Blanco */
+    --foreground: 240 15% 20%; /* Gris oscuro para texto */
 
     --card: 0 0% 100%; /* Blanco puro para tarjetas */
     --card-foreground: 240 15% 20%;
@@ -17,57 +17,57 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 15% 20%;
 
-    --primary: 320 90% 35%; /* Magenta Intenso más oscuro */
+    --primary: 303 92% 35%; /* Morado/Magenta (#ab07a5) */
     --primary-foreground: 0 0% 100%; /* Blanco */
 
-    --secondary: 240 60% 70%; /* Azul Lavanda */
+    --secondary: 241 67% 60%; /* Azul/Púrpura (#615fd2) */
     --secondary-foreground: 0 0% 100%; /* Blanco */
 
-    --muted: 240 20% 92%; /* Azul lavanda claro y apagado */
-    --muted-foreground: 240 15% 40%; /* Azul medio desaturado */
+    --muted: 240 20% 92%; /* Gris claro/azul para elementos apagados */
+    --muted-foreground: 240 15% 40%; /* Gris medio/azul */
 
-    --accent: 240 60% 70%; /* Mismo que secondary para acentos */
+    --accent: 241 67% 60%; /* Mismo que secondary para acentos */
     --accent-foreground: 0 0% 100%; /* Blanco */
 
     --destructive: 0 84% 60%; /* Rojo estándar */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 20% 85%; /* Borde azul lavanda claro */
+    --border: 240 20% 85%; /* Borde gris claro/azul */
     --input: 240 20% 85%;
-    --ring: 320 90% 35%; /* Mismo que primary */
+    --ring: 303 92% 35%; /* Mismo que primary */
 
     --radius: 0.5rem;
   }
 
   .dark {
-    /* Colores: Azul Lavanda y Magenta Intenso (tema oscuro) */
-    --background: 240 15% 10%; /* Azul muy oscuro desaturado */
-    --foreground: 240 20% 90%; /* Azul claro desaturado para texto */
+    /* Colores adaptados para tema oscuro */
+    --background: 240 15% 10%; /* Gris muy oscuro/azul */
+    --foreground: 240 20% 90%; /* Gris claro para texto */
 
-    --card: 240 15% 15%; /* Azul oscuro para tarjetas */
+    --card: 240 15% 15%; /* Gris oscuro para tarjetas */
     --card-foreground: 240 20% 90%;
 
     --popover: 240 15% 15%;
     --popover-foreground: 240 20% 90%;
 
-    --primary: 320 90% 50%; /* Magenta Intenso más oscuro para contraste en oscuro */
+    --primary: 303 92% 50%; /* Morado/Magenta más claro para contraste en oscuro */
     --primary-foreground: 0 0% 100%; /* Blanco */
 
-    --secondary: 240 60% 80%; /* Azul Lavanda más brillante para contraste */
+    --secondary: 241 67% 70%; /* Azul/Púrpura más claro para contraste */
     --secondary-foreground: 0 0% 100%; /* Blanco */
 
-    --muted: 240 15% 25%; /* Azul oscuro apagado */
-    --muted-foreground: 240 20% 60%; /* Azul medio desaturado */
+    --muted: 240 15% 25%; /* Gris oscuro apagado */
+    --muted-foreground: 240 20% 60%; /* Gris medio */
 
-    --accent: 240 60% 80%; /* Mismo que secondary para acentos */
+    --accent: 241 67% 70%; /* Mismo que secondary para acentos */
     --accent-foreground: 0 0% 100%; /* Blanco */
 
     --destructive: 0 72% 51%; /* Rojo estándar */
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 15% 30%; /* Borde azul oscuro */
+    --border: 240 15% 30%; /* Borde gris oscuro */
     --input: 240 15% 30%;
-    --ring: 320 90% 50%; /* Mismo que primary */
+    --ring: 303 92% 50%; /* Mismo que primary */
   }
 }
 
