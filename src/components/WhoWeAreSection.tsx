@@ -33,6 +33,7 @@ const WhoWeAreSection = () => {
           </CardContent>
         </Card>
         <img src="/plan.png" alt="Plan de acción" className="mt-12 mx-auto max-w-full h-auto rounded-lg shadow-lg" />
+        <img src="/plan2.png" alt="Plan de acción 2" className="mt-12 mx-auto max-w-full h-auto rounded-lg shadow-lg" />
       </div>
     </section>
   );
