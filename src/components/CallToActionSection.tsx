@@ -17,7 +17,12 @@ const CallToActionSection = () => {
             </Button>
           </Link>
           <Link to="/volunteer">
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-3">
+            {/* Ajuste de estilo para el botón secundario: outline con colores invertidos para el fondo primary */}
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-3"
+            >
               Sé Voluntario
             </Button>
           </Link>
