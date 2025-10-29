@@ -48,14 +48,7 @@ const ProgramsSection = () => {
           ))}
         </div>
         
-        {/* Imagen logros.png con mayor tamaño y efecto zoom */}
-        <div className="mt-12 mx-auto max-w-6xl overflow-hidden rounded-lg shadow-xl">
-          <img 
-            src="/logros.png" 
-            alt="Logros de la organización" 
-            className="w-full h-auto transition-transform duration-500 hover:scale-105" 
-          />
-        </div>
+        {/* Imagen logros.png eliminada */}
       </div>
     </section>
   );
