@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section 
       className="relative h-[80vh] pt-16 flex flex-col items-center justify-center text-center text-white bg-contain bg-no-repeat bg-center container mx-auto" // Altura aumentada a h-[80vh] y añadido pt-16
       style={{ 
-        backgroundImage: "url('/2.png')",
+        backgroundImage: "url('/3.png')",
       }}
     >
       {/* Contenido */}
