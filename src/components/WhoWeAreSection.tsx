@@ -7,9 +7,15 @@ const WhoWeAreSection = () => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-primary mb-8 text-balance">¿Quiénes somos?</h2>
         
-        {/* Contenido de Misión, Visión, Valores (movido de AboutSection) */}
+        {/* Imagen quienes.png insertada aquí */}
+        <img 
+          src="/quienes.png" 
+          alt="Quiénes Somos" 
+          className="mx-auto w-full max-w-4xl h-auto mb-8" 
+        />
+        
+        {/* Contenido de Misión, Visión, Valores */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="rounded-lg overflow-hidden shadow-xl">
             <img src="/IMG-20251015-WA0013.jpg" alt="Mujeres en un taller" className="w-full h-full object-cover" />
