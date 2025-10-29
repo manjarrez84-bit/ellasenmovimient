@@ -7,7 +7,8 @@ import AboutSection from '@/components/AboutSection';
 import CallToActionSection from '@/components/CallToActionSection';
 import ContactSection from '@/components/ContactSection';
 import AnimatedSection from '@/components/AnimatedSection';
-import LatestBlogPostsSection from '@/components/LatestBlogPostsSection'; // Import the new component
+import LatestBlogPostsSection from '@/components/LatestBlogPostsSection';
+import SiteImageSection from '@/components/SiteImageSection'; // Import the new component
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <HeroSection />
+        <SiteImageSection /> {/* Insert the new image section here */}
         <AnimatedSection>
           <AboutSection />
         </AnimatedSection>
