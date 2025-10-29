@@ -17,8 +17,7 @@ const HeroSection = () => {
       animate={{ opacity: [0.98, 1, 0.98] }}
       transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
     >
-      {/* Overlay para asegurar que el texto sea legible y la animación sea visible */}
-      <div className="absolute inset-0 bg-black/10 dark:bg-black/30"></div>
+      {/* El overlay oscuro ha sido eliminado para mostrar la imagen con sus colores originales */}
       
       {/* Contenido */}
       <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
