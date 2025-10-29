@@ -10,20 +10,10 @@ const CallToActionSection = () => {
         <p className="text-xl mb-10 max-w-3xl mx-auto text-balance">
           Cada donación, cada hora de voluntariado, nos permite seguir brindando esperanza y oportunidades a más mujeres.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+        <div className="flex justify-center">
           <Link to="/donate">
             <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-lg px-8 py-3">
               Donar Ahora
-            </Button>
-          </Link>
-          <Link to="/volunteer">
-            {/* Ajuste de estilo para el botón secundario: outline con colores invertidos para el fondo primary */}
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-3"
-            >
-              Sé Voluntario
             </Button>
           </Link>
         </div>
