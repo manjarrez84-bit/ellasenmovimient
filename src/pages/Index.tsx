@@ -4,7 +4,6 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
-import ProgramsSection from '@/components/ProgramsSection';
 import CallToActionSection from '@/components/CallToActionSection';
 import ContactSection from '@/components/ContactSection';
 import AnimatedSection from '@/components/AnimatedSection';
@@ -19,14 +18,10 @@ const Index = () => {
         <AnimatedSection>
           <AboutSection />
         </AnimatedSection>
+        {/* ProgramsSection removed */}
         <AnimatedSection>
-          <ProgramsSection />
+          <LatestBlogPostsSection />
         </AnimatedSection>
-        {/* TestimonialsSection removed */}
-        <AnimatedSection>
-          <LatestBlogPostsSection /> {/* Add the new section here */}
-        </AnimatedSection>
-        {/* GallerySection removed */}
         <AnimatedSection>
           <CallToActionSection />
         </AnimatedSection>
