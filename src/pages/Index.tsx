@@ -3,7 +3,6 @@ import { MadeWithDyad } from "@/components/made-with-dyad";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
 import CallToActionSection from '@/components/CallToActionSection';
 import ContactSection from '@/components/ContactSection';
 import AnimatedSection from '@/components/AnimatedSection';
@@ -17,10 +16,9 @@ const Index = () => {
       <main className="flex-grow">
         <HeroSection />
         <SiteImageSection /> {/* Insert the new image section here */}
-        <AnimatedSection>
-          <AboutSection />
-        </AnimatedSection>
-        {/* ProgramsSection removed */}
+        
+        {/* AnimatedSection removed as it was empty after AboutSection removal */}
+        
         <AnimatedSection>
           <LatestBlogPostsSection />
         </AnimatedSection>

@@ -1,11 +1,56 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Goal, Heart, Lightbulb } from 'lucide-react';
 
 const WhoWeAreSection = () => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-primary mb-8 text-balance">¿Quiénes somos?</h2>
+        
+        {/* Contenido de Misión, Visión, Valores (movido de AboutSection) */}
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div className="rounded-lg overflow-hidden shadow-xl">
+            <img src="/IMG-20251015-WA0013.jpg" alt="Mujeres en un taller" className="w-full h-full object-cover" />
+          </div>
+          
+          <div className="space-y-6">
+            <Tabs defaultValue="mission" className="w-full">
+              <TabsList className="grid w-full grid-cols-3">
+                <TabsTrigger value="mission">Misión</TabsTrigger>
+                <TabsTrigger value="vision">Visión</TabsTrigger>
+                <TabsTrigger value="values">Valores</TabsTrigger>
+              </TabsList>
+              <TabsContent value="mission" className="p-6 bg-muted/50 rounded-b-lg">
+                <div className="flex items-start space-x-4">
+                  <Goal className="text-primary mt-1" size={24} />
+                  <p className="text-foreground text-balance text-left">
+                    Contribuir a elevar la calidad de vida de las personas de escasos recursos en especial de niñas y mujeres mexicanas, buscando su participación igualitaria en la sociedad. Ofreciéndoles de manera eficiente y sostenible servicios y productos que contribuyan a su desarrollo integral.
+                  </p>
+                </div>
+              </TabsContent>
+              <TabsContent value="vision" className="p-6 bg-muted/50 rounded-b-lg">
+                <div className="flex items-start space-x-4">
+                  <Lightbulb className="text-primary mt-1" size={24} />
+                  <p className="text-foreground text-balance text-left">
+                    Ser una fuerza transformadora y generadora de respuestas para un avance significativo en el desarrollo integral de Ellas habiendo logrado su empoderamiento.
+                  </p>
+                </div>
+              </TabsContent>
+              <TabsContent value="values" className="p-6 bg-muted/50 rounded-b-lg">
+                <div className="flex items-start space-x-4">
+                  <Heart className="text-primary mt-1" size={24} />
+                  <p className="text-foreground text-balance text-left">
+                    Dignidad. Sororidad y solidaridad. Empoderamiento femenino. Equidad. Libertad.
+                  </p>
+                </div>
+              </TabsContent>
+            </Tabs>
+          </div>
+        </div>
+        {/* Fin del contenido movido */}
+
         <Card className="max-w-4xl mx-auto p-8 shadow-lg">
           <CardContent className="text-xl text-foreground text-justify space-y-6">
             <p className="text-balance">
