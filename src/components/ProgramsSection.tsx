@@ -47,6 +47,13 @@ const ProgramsSection = () => {
             </Card>
           ))}
         </div>
+        
+        {/* Imagen logros.png añadida y centrada */}
+        <img 
+          src="/logros.png" 
+          alt="Logros de la organización" 
+          className="mt-12 mx-auto w-full max-w-4xl h-auto rounded-lg shadow-xl" 
+        />
       </div>
     </section>
   );
