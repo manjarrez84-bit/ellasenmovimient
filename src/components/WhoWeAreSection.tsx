@@ -34,7 +34,6 @@ const WhoWeAreSection = () => {
         </Card>
         <img src="/plan.png" alt="Plan de acción" className="mt-12 mx-auto h-auto rounded-lg" />
         
-        {/* Nuevo texto añadido aquí */}
         <div className="max-w-4xl mx-auto mt-8 p-6 bg-muted/50 rounded-lg">
           <p className="text-lg text-foreground text-justify text-balance">
             Los objetivos institucionales de Ellas en Movimiento suelen centrarse en la promoción de la igualdad de género y los derechos humanos de las mujeres, niñas y adolescentes, esto incluye la erradicación de la violencia de género, el empoderamiento económico y social, la promoción de la participación ciudadana y política, y el desarrollo de capacidades a través de procesos de aprendizaje de capacitación y sensibilización en temas trascendentes para Ellas.
@@ -42,6 +41,28 @@ const WhoWeAreSection = () => {
         </div>
 
         <img src="/EJES2.png" alt="Ejes de acción" className="mt-12 mx-auto w-full h-auto rounded-lg" />
+
+        {/* Nuevo texto añadido aquí */}
+        <div className="max-w-4xl mx-auto mt-8 p-6 bg-muted/50 rounded-lg text-justify">
+          <p className="text-lg text-foreground mb-4 text-balance">
+            Los sujetos de derecho de nuestra Ellas en Movimiento son en femenino, nuestros servicios y programas van encaminados a la atención integral de mujeres niñas, niños y adolescentes. Grupos poblacionales ancestralmente excluidos de la toma de decisiones del desarrollo de México. 
+          </p>
+          <p className="text-lg font-semibold text-primary mb-3 text-balance">
+            Y las diversas actividades de sostenibilidad de Ellas en Movimiento van encaminadas a: 
+          </p>
+          <ul className="list-disc list-inside text-lg text-foreground space-y-2 ml-4">
+            <li className="text-balance">Promueven la autonomía económica de las mujeres a través de fondos de ahorro, de transferencia de conocimientos para la elaboración de productos en el potencial mercado de la economía circular amigables con el ambiente.</li>
+            <li className="text-balance">Participación en finanzas climáticas y la creación de redes de colaboración para la toma de decisiones ambientales.</li>
+            <li className="text-balance">Actividades de desarrollo económico y social</li>
+            <li className="text-balance">Economía social: Creación de redes de economía social, como los fondos revolventes para el ahorro colectivo, para generar autonomía financiera.</li>
+            <li className="text-balance">Formación y capacitación: Impulsar la capacitación en áreas técnicas y financieras relacionadas con la sostenibilidad, como las finanzas climáticas y los bonos verdes.</li>
+            <li className="text-balance">Empoderamiento: Fortalecer el rol de las mujeres en la toma de decisiones, especialmente en asuntos ambientales, a través del diálogo y el intercambio de experiencias.</li>
+            <li className="text-balance">Redes de colaboración: Crear y fortalecer redes de sororidad y colaboración para compartir conocimientos, experiencias y apoyos mutuos.</li>
+            <li className="text-balance">Actividades de integración</li>
+            <li className="text-balance">Participación política: Promover la participación de las mujeres en espacios de toma de decisiones para asegurar que sus voces y necesidades sean tomadas en cuenta en las políticas de desarrollo sostenible.</li>
+            <li className="text-balance">Conocimientos ancestrales: Recuperar y utilizar conocimientos ancestrales y saberes locales en la toma de decisiones sobre sostenibilidad y bienestar comunitario.</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
