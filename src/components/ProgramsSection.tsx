@@ -29,7 +29,6 @@ const ProgramsSection = () => {
   return (
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 text-center">
-        <img src="/plan2.png" alt="Plan de programas" className="mb-12 mx-auto max-w-full h-auto rounded-lg shadow-lg" />
         <h2 className="text-4xl font-bold text-primary mb-12 text-balance">Nuestros Programas</h2>
         <p className="text-lg text-foreground mb-12 max-w-3xl mx-auto text-balance">
           Trabajamos en diversas áreas para ofrecer un apoyo integral a las mujeres, adaptándonos a sus necesidades específicas.
