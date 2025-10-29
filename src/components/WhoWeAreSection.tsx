@@ -42,8 +42,8 @@ const WhoWeAreSection = () => {
 
         <img src="/EJES2.png" alt="Ejes de acción" className="mt-12 mx-auto w-full h-auto rounded-lg" />
 
-        {/* Nuevo texto añadido aquí */}
-        <div className="max-w-4xl mx-auto mt-8 p-6 bg-muted/50 rounded-lg text-justify">
+        {/* Nuevo texto añadido aquí - Cambiando text-justify a text-left */}
+        <div className="max-w-4xl mx-auto mt-8 p-6 bg-muted/50 rounded-lg text-left">
           <p className="text-lg text-foreground mb-4 text-balance">
             Los sujetos de derecho de nuestra Ellas en Movimiento son en femenino, nuestros servicios y programas van encaminados a la atención integral de mujeres niñas, niños y adolescentes. Grupos poblacionales ancestralmente excluidos de la toma de decisiones del desarrollo de México. 
           </p>
