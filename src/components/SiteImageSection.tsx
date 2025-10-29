@@ -2,7 +2,7 @@ import React from 'react';
 
 const SiteImageSection = () => {
   return (
-    <section className="py-12 bg-background">
+    <section className="bg-background">
       <div className="container mx-auto px-4 flex justify-center">
         <img 
           src="/sitio.png" 
