@@ -7,7 +7,7 @@ const SiteImageSection = () => {
         <img 
           src="/sitio2.png" 
           alt="Imagen del sitio" 
-          className="w-full max-w-4xl h-auto rounded-lg" 
+          className="w-full max-w-6xl h-auto rounded-lg" 
         />
       </div>
     </section>
