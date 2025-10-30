@@ -8,11 +8,11 @@ const WhoWeAreSection = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 text-center">
         
-        {/* Imagen principal de la sección "Quiénes Somos" */}
+        {/* Imagen quienes.png insertada aquí */}
         <img 
-          src="/12.png" 
+          src="/quienes.png" 
           alt="Quiénes Somos" 
-          className="mx-auto w-full max-w-4xl h-auto mb-12 rounded-lg shadow-xl" 
+          className="mx-auto w-full max-w-4xl h-auto mb-8" 
         />
         
         {/* Contenido de Misión, Visión, Valores */}
