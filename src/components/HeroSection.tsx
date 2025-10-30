@@ -10,7 +10,7 @@ const HeroSection = () => {
     <motion.section 
       className="relative h-[40vh] pt-16 flex flex-col items-center justify-center text-center text-white bg-cover bg-no-repeat bg-center container mx-auto overflow-hidden"
       style={{ 
-        backgroundImage: "url('/3.png')",
+        backgroundImage: "url('/4.png')",
       }}
       // Animación sutil para simular un destello o respiración
       initial={{ opacity: 0.98 }}
