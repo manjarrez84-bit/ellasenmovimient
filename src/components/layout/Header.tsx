@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { ThemeToggle } from '../theme-toggle';
 import { getCurrentUser, onAuthStateChange } from '@/services/forumService'; // Import auth services
 
 const navItems = [
@@ -72,7 +71,6 @@ const Header = () => {
               Crear Post
             </Link>
           )}
-          <ThemeToggle />
           <Link to="/donate">
             <Button>Donar</Button>
           </Link>
@@ -80,7 +78,6 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex items-center space-x-2">
-          <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
