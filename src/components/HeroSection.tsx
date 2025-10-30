@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const HeroSection = () => {
   return (
     <motion.section 
-      className="relative h-[60vh] pt-16 flex flex-col items-center justify-center text-center text-white bg-contain bg-no-repeat bg-center container mx-auto overflow-hidden"
+      className="relative h-[80vh] pt-16 flex flex-col items-center justify-center text-center text-white bg-contain bg-no-repeat bg-center w-full overflow-hidden"
       style={{ 
         backgroundImage: "url('/4.png')",
       }}
@@ -17,10 +17,8 @@ const HeroSection = () => {
       animate={{ opacity: [0.98, 1, 0.98] }}
       transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
     >
-      {/* El overlay oscuro ha sido eliminado para mostrar la imagen con sus colores originales */}
-      
       {/* Contenido */}
-      <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center">
+      <div className="relative z-10 p-6 max-w-4xl flex flex-col items-center container mx-auto">
         {/* El botón "Únete a Nuestra Causa" ha sido eliminado */}
       </div>
     </motion.section>
