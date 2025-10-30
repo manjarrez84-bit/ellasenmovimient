@@ -91,6 +91,9 @@ const WhoWeAreSection = () => {
           </CardContent>
         </Card>
         
+        {/* Imagen obje.png insertada aquí */}
+        <img src="/obje.png" alt="Objetivos" className="mt-12 mx-auto h-auto rounded-lg" />
+
         <div className="max-w-4xl mx-auto mt-8 p-6 bg-muted/50 rounded-lg">
           <p className="text-lg text-foreground text-justify text-balance">
             Los objetivos institucionales de Ellas en Movimiento suelen centrarse en la promoción de la igualdad de género y los derechos humanos de las mujeres, niñas y adolescentes, esto incluye la erradicación de la violencia de género, el empoderamiento económico y social, la promoción de la participación ciudadana y política, y el desarrollo de capacidades a través de procesos de aprendizaje de capacitación y sensibilización en temas trascendentes para Ellas.
