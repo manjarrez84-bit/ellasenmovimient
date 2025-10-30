@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const HeroSection = () => {
   return (
     <motion.section 
-      className="relative h-[80vh] pt-16 flex flex-col items-center justify-center text-center text-white bg-contain bg-no-repeat bg-center w-full overflow-hidden"
+      className="relative h-[60vh] flex flex-col items-center justify-center text-center text-white bg-contain bg-no-repeat bg-center w-full overflow-hidden"
       style={{ 
         backgroundImage: "url('/4.png')",
       }}
