@@ -38,7 +38,7 @@ const Header = () => {
     };
 
     checkUser(); // Initial check
-    const { data: { subscription } } = onAuthStateChange((event, session) => {
+    const { data: { subscription } = { subscription: { unsubscribe: () => {} } } } = onAuthStateChange((event, session) => {
       setUser(session?.user || null);
     });
 
@@ -57,9 +57,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img src="/logo.jpg" alt="Ellas en Movimiento A.C. Logo" className="h-10 w-auto" />
-          {/* <span className="text-2xl font-bold text-primary text-balance">
-            Ellas en Movimiento A.C.
-          </span> */}
+          <img src="/ellas.png" alt="Ellas en Movimiento A.C. Texto" className="h-10 w-auto" />
         </Link>
         
         {/* Desktop Navigation */}
