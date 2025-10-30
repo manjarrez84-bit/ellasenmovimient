@@ -65,8 +65,12 @@ const WhoWeAreSection = () => {
             <p className="text-balance">
               En Ellas en Movimiento A.C. trabajamos principalmente con mujeres, niñas, niños y adolescentes que habitan en contextos de vulnerabilidad social dentro del estado de Nuevo León, especialmente en zonas urbanas marginadas de Monterrey, como el polígono de pobreza No. 66. Estos grupos enfrentan múltiples carencias que afectan su bienestar, su participación en la vida pública y sus oportunidades de desarrollo.
             </p>
-            {/* INSERCIÓN DE LA IMAGEN /12.png */}
-            <img src="/12.png" alt="Imagen de apoyo" className="mx-auto w-full h-auto my-8 rounded-lg shadow-md" />
+            {/* INSERCIÓN DE LA IMAGEN /12.png - Sombra eliminada, contraste añadido */}
+            <img 
+              src="/12.png" 
+              alt="Imagen de apoyo" 
+              className="mx-auto w-full h-auto my-8 rounded-lg brightness-110 contrast-125" 
+            />
             {/* FIN DE LA INSERCIÓN */}
             <p className="text-balance">
               Nuestra visión es ser una fuerza transformadora y generadora de respuestas para un avance 
