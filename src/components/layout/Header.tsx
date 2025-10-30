@@ -57,7 +57,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <img src="/logo.jpg" alt="Ellas en Movimiento A.C. Logo" className="h-10 w-auto" />
-          <img src="/ellas.png" alt="Ellas en Movimiento A.C. Texto" className="h-10 w-auto" />
+          <img src="/ellas2.png" alt="Ellas en Movimiento A.C. Texto" className="h-10 w-auto" />
         </Link>
         
         {/* Desktop Navigation */}
