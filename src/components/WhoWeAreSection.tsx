@@ -90,7 +90,6 @@ const WhoWeAreSection = () => {
             </p>
           </CardContent>
         </Card>
-        <img src="/objetivos.png" alt="Objetivos de acción" className="mt-12 mx-auto h-auto rounded-lg" />
         
         <div className="max-w-4xl mx-auto mt-8 p-6 bg-muted/50 rounded-lg">
           <p className="text-lg text-foreground text-justify text-balance">
