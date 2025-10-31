@@ -108,6 +108,13 @@ const DetailedProgramsList = () => {
             </React.Fragment>
           ))}
         </div>
+        
+        {/* Imagen cintilla.png insertada al final de la sección */}
+        <img 
+          src="/cintilla.png" 
+          alt="Cintilla de apoyo" 
+          className="mx-auto w-full max-w-4xl h-auto mt-12 rounded-lg shadow-lg" 
+        />
       </div>
     </section>
   );
