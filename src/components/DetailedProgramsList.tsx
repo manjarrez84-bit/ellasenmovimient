@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Utensils, HeartHandshake, Home, Leaf, Users } from 'lucide-react';
+import { Utensils, HeartHandshake, Home, Leaf, Users, Briefcase } from 'lucide-react';
 
 const detailedPrograms = [
   {
@@ -27,6 +27,11 @@ const detailedPrograms = [
     title: "Fortalecimiento Comunitario",
     description: "Contribuir a la formación de liderazgos colectivos para el mejoramiento del entorno, la distribución de los recursos naturales a su disposición de manera equitativa y trabajar para un desarrollo sustentable y ser una comunidad sostenible con rostro humano.",
     icon: <Users className="h-6 w-6 text-primary" />,
+  },
+  {
+    title: "Programa de Opciones Productivas para Ellas",
+    description: "Se ofrecen talleres de oficios; asesoría de plan de empresa, asistencia técnica, gestión de financiamientos u opciones de créditos blandos.",
+    icon: <Briefcase className="h-6 w-6 text-primary" />,
   },
 ];
 
