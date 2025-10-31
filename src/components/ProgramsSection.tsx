@@ -46,6 +46,7 @@ const ProgramsSection = () => {
           <p className="text-lg text-foreground text-justify text-balance">
             Nuestros programas están diseñados para abordar las necesidades de las mujeres en situación de vulnerabilidad, enfocándose en tres pilares fundamentales: 
             <span className="font-bold text-primary"> Seguridad, Autonomía y Empoderamiento.</span>
+            <br /> {/* Agregamos un salto de línea explícito para reflejar el formato solicitado */}
             A través de un enfoque integral, buscamos no solo atender la emergencia, sino también construir un camino sostenible hacia la independencia y el bienestar.
           </p>
         </div>
