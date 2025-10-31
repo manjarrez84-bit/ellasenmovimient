@@ -87,6 +87,15 @@ const DetailedProgramsList = () => {
                   className="mx-auto w-full max-w-4xl h-auto my-8 rounded-lg shadow-lg" 
                 />
               )}
+
+              {/* Insertar imagen 1414.png después del cuarto elemento (Programa EDUCAM) */}
+              {program.title === "Programa EDUCAM (Educación Ecológica y Cultura Ambiental)" && (
+                <img 
+                  src="/1414.png" 
+                  alt="Imagen de apoyo al programa" 
+                  className="mx-auto w-full max-w-4xl h-auto my-8 rounded-lg shadow-lg" 
+                />
+              )}
             </React.Fragment>
           ))}
         </div>
