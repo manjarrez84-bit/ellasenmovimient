@@ -78,6 +78,15 @@ const DetailedProgramsList = () => {
                   className="mx-auto w-full max-w-4xl h-auto my-8 rounded-lg shadow-lg" 
                 />
               )}
+
+              {/* Insertar imagen 1313.png después del tercer elemento (Sistema de Cuidados) */}
+              {program.title === "Sistema de Cuidados" && (
+                <img 
+                  src="/1313.png" 
+                  alt="Imagen de apoyo al programa" 
+                  className="mx-auto w-full max-w-4xl h-auto my-8 rounded-lg shadow-lg" 
+                />
+              )}
             </React.Fragment>
           ))}
         </div>
