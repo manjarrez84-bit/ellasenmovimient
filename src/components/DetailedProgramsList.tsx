@@ -40,6 +40,14 @@ const DetailedProgramsList = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-primary mb-8 text-center text-balance">Programas Específicos</h2>
+        
+        {/* Imagen PREP.png insertada aquí */}
+        <img 
+          src="/PREP.png" 
+          alt="Programa PREP" 
+          className="mx-auto w-full max-w-4xl h-auto mb-8 rounded-lg shadow-lg" 
+        />
+
         <div className="max-w-4xl mx-auto space-y-6">
           {detailedPrograms.map((program, index) => (
             <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
