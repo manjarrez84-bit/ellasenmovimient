@@ -34,6 +34,16 @@ const ProgramsSection = () => {
           Trabajamos en diversas áreas para ofrecer un apoyo integral a las mujeres, adaptándonos a sus necesidades específicas.
         </p>
 
+        {/* Nuevo texto añadido aquí */}
+        <div className="max-w-4xl mx-auto mb-12 p-6 bg-background rounded-lg shadow-md text-left">
+          <p className="text-lg text-foreground text-balance">
+            Nuestros programas están diseñados para abordar las necesidades de las mujeres en situación de vulnerabilidad, enfocándose en tres pilares fundamentales: 
+            <span className="font-bold text-primary"> Seguridad, Autonomía y Empoderamiento.</span>
+            A través de un enfoque integral, buscamos no solo atender la emergencia, sino también construir un camino sostenible hacia la independencia y el bienestar.
+          </p>
+        </div>
+        {/* Fin del nuevo texto */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {programs.map((program, index) => (
             <Card key={index} className="p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
