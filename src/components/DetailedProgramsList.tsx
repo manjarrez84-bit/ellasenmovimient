@@ -50,15 +50,26 @@ const DetailedProgramsList = () => {
 
         <div className="max-w-4xl mx-auto space-y-6">
           {detailedPrograms.map((program, index) => (
-            <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="flex flex-row items-center space-x-4 p-4 md:p-6">
-                {program.icon}
-                <CardTitle className="text-xl font-semibold text-primary text-balance">{program.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="p-4 pt-0 md:px-6 md:pb-6">
-                <p className="text-foreground text-balance">{program.description}</p>
-              </CardContent>
-            </Card>
+            <React.Fragment key={index}>
+              <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <CardHeader className="flex flex-row items-center space-x-4 p-4 md:p-6">
+                  {program.icon}
+                  <CardTitle className="text-xl font-semibold text-primary text-balance">{program.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="p-4 pt-0 md:px-6 md:pb-6">
+                  <p className="text-foreground text-balance">{program.description}</p>
+                </CardContent>
+              </Card>
+              
+              {/* Insertar imagen 2222.png después del primer elemento (REDPARADAHR) */}
+              {program.title === "REDPARADAHR" && (
+                <img 
+                  src="/2222.png" 
+                  alt="Imagen de apoyo al programa" 
+                  className="mx-auto w-full max-w-4xl h-auto my-8 rounded-lg shadow-lg" 
+                />
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>
