@@ -4,13 +4,18 @@ import Footer from '@/components/layout/Footer';
 import { MadeWithDyad } from '@/components/made-with-dyad';
 import BlogPostCard from '@/components/BlogPostCard';
 import { getAllPosts } from '@/services/blogService';
+import { getCurrentUser, onAuthStateChange } from '@/services/forumService';
 import { BlogPost } from '@/types';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
+import { PlusCircle } from 'lucide-react';
 
 const BlogPage = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [user, setUser] = useState<any | null>(null);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -25,7 +30,21 @@ const BlogPage = () => {
       }
     };
 
+    const checkUser = async () => {
+      const currentUser = await getCurrentUser();
+      setUser(currentUser);
+    };
+
     fetchPosts();
+    checkUser();
+
+    const { data: { subscription } = { subscription: { unsubscribe: () => {} } } } = onAuthStateChange((event, session) => {
+      setUser(session?.user || null);
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
   }, []);
 
   const renderSkeletons = () => (
@@ -52,6 +71,18 @@ const BlogPage = () => {
               <p className="text-lg text-foreground max-w-3xl mx-auto text-balance">
                 Mantente al día con nuestras últimas noticias, historias de impacto y próximos eventos.
               </p>
+              
+              {/* Botón para crear post, visible solo si el usuario está logueado */}
+              {user && (
+                <div className="mt-6">
+                  <Link to="/admin/blog/new">
+                    <Button className="flex items-center space-x-2">
+                      <PlusCircle className="h-5 w-5" />
+                      <span>Crear Nueva Publicación</span>
+                    </Button>
+                  </Link>
+                </div>
+              )}
             </div>
             {error && <p className="text-center text-destructive">{error}</p>}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
