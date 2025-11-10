@@ -24,6 +24,7 @@ const BlogPage = () => {
         const fetchedPosts = await getAllPosts();
         setPosts(fetchedPosts);
       } catch (err) {
+        console.error("Error fetching blog posts:", err);
         setError('No se pudieron cargar las publicaciones. Por favor, inténtalo de nuevo más tarde.');
       } finally {
         setLoading(false);
@@ -84,12 +85,36 @@ const BlogPage = () => {
                 </div>
               )}
             </div>
-            {error && <p className="text-center text-destructive">{error}</p>}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {loading ? renderSkeletons() : posts.map(post => (
-                <BlogPostCard key={post.id} post={post} />
-              ))}
-            </div>
+            
+            {error && <p className="text-center text-destructive mb-8">{error}</p>}
+            
+            {loading ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {renderSkeletons()}
+              </div>
+            ) : posts.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {posts.map(post => (
+                  <BlogPostCard key={post.id} post={post} />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center p-10 bg-card rounded-lg shadow-lg">
+                <p className="text-xl text-foreground font-semibold">
+                  Aún no hay publicaciones en el blog. ¡Sé el primero en crear una!
+                </p>
+                {user && (
+                  <div className="mt-6">
+                    <Link to="/admin/blog/new">
+                      <Button className="flex items-center space-x-2">
+                        <PlusCircle className="h-5 w-5" />
+                        <span>Crear Publicación</span>
+                      </Button>
+                    </Link>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </section>
       </main>
