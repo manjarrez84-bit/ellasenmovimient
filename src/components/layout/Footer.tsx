@@ -7,6 +7,16 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-12 dark:bg-black border-t border-primary-foreground/10">
       <div className="container mx-auto px-4">
+        
+        {/* Imagen cintilla.png insertada aquí */}
+        <div className="mb-8">
+          <img 
+            src="/cintilla.png" 
+            alt="Cintilla de apoyo" 
+            className="mx-auto w-full max-w-4xl h-auto rounded-lg" 
+          />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
           {/* Columna 1: Info y Redes Sociales */}
           <div>
@@ -27,6 +37,7 @@ const Footer = () => {
               <li><Link to="/about" className="hover:underline text-balance">Nosotras</Link></li>
               <li><Link to="/programs" className="hover:underline text-balance">Programas</Link></li>
               <li><Link to="/blog" className="hover:underline text-balance">Blog</Link></li>
+              <li><Link to="/forum" className="hover:underline text-balance">Foro</Link></li>
               <li><Link to="/faq" className="hover:underline text-balance">FAQ</Link></li>
               <li><Link to="/contact" className="hover:underline text-balance">Contacto</Link></li>
             </ul>
